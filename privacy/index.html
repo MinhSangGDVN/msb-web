@@ -1,1 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính sách bảo mật | MingSengBot</title>
+    <meta name="description" content="Chính sách bảo mật (Privacy Policy) tại MingSengBot. Cam kết minh bạch về cách chúng tôi thu thập, sử dụng và bảo vệ dữ liệu người dùng, Discord ID và tài sản ảo trên hệ thống.">
+    <meta name="keywords" content="MingSengBot, Discord Bot Việt Nam, Bot Tài Xỉu, Bot Economy, Bot Câu Cá, Bot Giải Trí, MSB Discord Bot, Bot Bầu Cua, Bot Mini-Games, Discord bot minigames, Discord Entertainment Bot, Discord bots, Discord VN Bot">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mingsengbot.vercel.app/">
+    <meta property="og:image" content="https://mingsengbot.vercel.app/assets/banner.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MingSengBot | Bot Giải Trí & Economy Đỉnh Cao">
+    <meta name="twitter:description" content="Nâng tầm Discord server với hệ thống Economy, Minigame, Câu cá, Đào mỏ hấp dẫn.">
+    <meta name="twitter:image" content="https://mingsengbot.vercel.app/assets/banner.png">
+    <meta property="og:title" content="Chính sách bảo mật | MingSengBot">
+    <meta property="og:description" content="Thông tin minh bạch về cách MingSengBot thu thập, sử dụng và bảo vệ dữ liệu người dùng trên nền tảng Discord.">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/favicon.png">
+    <link rel="canonical" href="https://mingsengbot.vercel.app/privacy/" />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+    <div class="glow-blob blob-1"></div>
+    <div class="glow-blob blob-2"></div>
+    <div id="particles-js"></div>
+    
+    <header>
+        <a href="../" class="logo">
+            <img src="../assets/avatar.jpg" alt="Logo">
+            <span>MingSengBot</span>
+        </a>
+        <nav class="nav-desktop">
+            <a href="../" class="nav-item">Trang chủ</a>
+            <a href="../list/" class="nav-item">Lệnh bot</a>
+            <a href="../terms/" class="nav-item">Điều khoản</a>
+            <a href="#" class="nav-item active">Bảo mật</a>
+            <a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=8" class="btn-invite">Mời bot ngay</a>
+        </nav>
+        <div class="menu-btn glass-shine" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
 
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    
+    <div class="mobile-drawer glass-panel" id="drawer">
+        <div class="drawer-header">
+            <div class="logo">
+                <img src="../assets/avatar.jpg" alt="Logo">
+                <span>MingSengBot</span>
+            </div>
+            <div class="menu-btn" onclick="toggleMenu()" style="width: 35px; height: 35px; font-size: 1rem;">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="drawer-links">
+            <a href="../"><i class="fa-solid fa-house"></i> Trang chủ</a>
+            <a href="../list/"><i class="fa-solid fa-terminal"></i> Danh sách lệnh</a>
+            <a href="../terms/"><i class="fa-solid fa-file-contract"></i> Điều khoản dịch vụ</a>
+            <a href="#" class="active"><i class="fa-solid fa-shield-halved"></i> Chính sách bảo mật</a>
+        </div>
+        <div style="margin-top: auto; display: flex; flex-direction: column; gap: 15px;">
+            <a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=8" class="btn btn-primary" style="justify-content: center;">
+                Mời bot ngay
+            </a>
+        </div>
+    </div>
+
+    <section class="legal-section">
+        
+        <div class="lang-switcher glass-panel">
+            <button class="lang-btn active" onclick="switchLang('vi')">
+                <span>🇻🇳</span> Tiếng Việt
+            </button>
+            <button class="lang-btn" onclick="switchLang('en')">
+                <span>🇺🇸</span> English
+            </button>
+        </div>
+
+        <div class="legal-content glass-panel">
+            
+            <div id="content-vi" class="lang-content">
+                <h1>CHÍNH SÁCH BẢO MẬT</h1>
+                <p class="meta-info">Ngày có hiệu lực: 16 tháng 01, 2026<br>Phiên bản: 1.0</p>
+                
+                <p>Chào mừng bạn đến với MingSengBot. Chúng tôi cam kết bảo vệ quyền riêng tư của người dùng. Chính sách bảo mật này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ thông tin của bạn khi bạn sử dụng dịch vụ của chúng tôi trên nền tảng Discord. Bằng việc sử dụng dịch vụ, bạn cũng đồng ý với <a href="../terms/">Điều khoản dịch vụ (Terms of Service)</a> của chúng tôi.</p>
+
+                <h2>1. DỮ LIỆU CHÚNG TÔI THU THẬP</h2>
+                <p>Để hệ thống Economy và các tính năng trò chơi hoạt động ổn định, MingSengBot thu thập các thông tin công khai từ Discord bao gồm:</p>
+                <ul>
+                    <li><strong>User ID:</strong> Mã định danh duy nhất của tài khoản Discord.</li>
+                    <li><strong>Username:</strong> Tên người dùng của bạn.</li>
+                    <li><strong>Server ID & Server Name:</strong> Mã định danh và tên của máy chủ nơi bot được thêm vào.</li>
+                    <li><strong>Server Member Nickname:</strong> Biệt danh của bạn trong một máy chủ cụ thể.</li>
+                </ul>
+
+                <h2>2. MỤC ĐÍCH SỬ DỤNG THÔNG TIN</h2>
+                <p>Chúng tôi chỉ thu thập những dữ liệu thực sự cần thiết để vận hành các tính năng của Bot:</p>
+                <ul>
+                    <li><strong>User ID:</strong> Được sử dụng làm khóa chính trong cơ sở dữ liệu để lưu trữ và quản lý tài sản ảo (Gold, KCT, vật phẩm...). Đây là cơ sở để đảm bảo tài sản của bạn không bị nhầm lẫn với người khác.</li>
+                    <li><strong>Username:</strong> Dùng để hiển thị danh tính trong các tính năng cộng đồng. Ví dụ: Khi bạn tạo và đăng tải một Custom Tool (ctool), tên của bạn sẽ được hiển thị như một cách ghi nhận quyền tác giả.</li>
+                    <li><strong>Server ID & Server Name:</strong> Được sử dụng cho mục đích thống kê nội bộ của Đội ngũ Admin. Điều này giúp chúng tôi biết được quy mô sử dụng và tối ưu hóa tài nguyên máy chủ.</li>
+                    <li><strong>Server Member Nickname:</strong> Sử dụng trong các tính năng tương tác đa máy chủ, điển hình là game Đua Thú Multiplayer. Khi các thành viên từ nhiều server khác nhau tham gia cùng một trận đấu, biệt danh này giúp mọi người nhận diện nhau trong trò chơi.</li>
+                </ul>
+
+                <h2>3. CHIA SẺ VÀ BẢO MẬT DỮ LIỆU</h2>
+                <ul>
+                    <li><strong>Chia sẻ:</strong> Chúng tôi không bán, trao đổi hoặc chuyển giao thông tin cá nhân của bạn cho bên thứ ba. Dữ liệu chỉ được lưu trữ trong hệ thống nội bộ của MingSengBot.</li>
+                    <li><strong>Hiển thị công khai:</strong> Một số thông tin như Username hoặc Nickname có thể hiển thị công khai cho những người dùng khác thông qua các lệnh của bot (đua thú multiplayer, kết quả trận đấu, thông tin công cụ...).</li>
+                    <li><strong>Bảo mật:</strong> Chúng tôi áp dụng các biện pháp kỹ thuật cần thiết để bảo vệ dữ liệu khỏi việc truy cập trái phép. Tuy nhiên, do tính chất của môi trường internet, chúng tôi không thể đảm bảo an ninh tuyệt đối 100%.</li>
+                </ul>
+
+                <h2>4. QUYỀN CỦA NGƯỜI DÙNG</h2>
+                <p>Bạn có quyền kiểm soát dữ liệu của mình đối với MingSengBot:</p>
+                <ul>
+                    <li><strong>Ngừng sử dụng:</strong> Bạn có thể ngừng cung cấp dữ liệu bằng cách xóa Bot khỏi máy chủ hoặc ngừng sử dụng các lệnh của Bot.</li>
+                    <li><strong>Yêu cầu xóa dữ liệu:</strong> Nếu bạn muốn xóa hoàn toàn dữ liệu về tài sản và thông tin cá nhân khỏi hệ thống của chúng tôi, vui lòng liên hệ Admin thông qua Support Server. Lưu ý: Hành động này không thể hoàn tác và mọi tài sản ảo sẽ bị mất.</li>
+                </ul>
+
+                <h2>5. THAY ĐỔI CHÍNH SÁCH</h2>
+                <p>Chúng tôi có thể cập nhật Chính sách bảo mật này theo thời gian. Mọi thay đổi sẽ được thông báo chính thức tại Server Support. Việc bạn tiếp tục sử dụng Bot sau khi có thay đổi đồng nghĩa với việc bạn chấp nhận Chính sách bảo mật mới.</p>
+
+                <h2>6. LIÊN HỆ</h2>
+                <p>Nếu có bất kỳ câu hỏi nào liên quan đến quyền riêng tư, bạn có thể liên hệ với chúng tôi tại:</p>
+                <ul>
+                    <li>Discord Support Server: <a href="https://discord.gg/fv2RBWrqSt" target="_blank">https://discord.gg/fv2RBWrqSt</a></li>
+                    <li>Phương thức: Tạo Ticket hỗ trợ tại kênh <code>#𝘾𝙧𝙚𝙖𝙩𝙚</code></li>
+                </ul>
+            </div>
+
+            <div id="content-en" class="lang-content" style="display: none;">
+                <h1>PRIVACY POLICY</h1>
+                <p class="meta-info">Effective Date: January 16, 2026<br>Version: 1.0</p>
+                
+                <p>Welcome to MingSengBot. We are committed to protecting our users' privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our services on the Discord platform. By using our services, you also agree to our <a href="../terms/">Terms of Service (ToS)</a>.</p>
+
+                <h2>1. DATA WE COLLECT</h2>
+                <p>To ensure the stability of the Economy system and game features, MingSengBot collects public information from Discord, including:</p>
+                <ul>
+                    <li><strong>User ID:</strong> The unique identifier of your Discord account.</li>
+                    <li><strong>Username:</strong> Your global Discord username.</li>
+                    <li><strong>Server ID & Server Name:</strong> The identifier and name of the server where the bot is added.</li>
+                    <li><strong>Server Member Nickname:</strong> Your specific nickname within a server.</li>
+                </ul>
+
+                <h2>2. PURPOSE OF DATA USAGE</h2>
+                <p>We only collect data that is strictly necessary to operate the Bot's features:</p>
+                <ul>
+                    <li><strong>User ID:</strong> Used as a primary key in our database to store and manage virtual assets (Gold, KCT, items, etc.). This ensures your assets are correctly attributed to your account.</li>
+                    <li><strong>Username:</strong> Used to display your identity in community features. For example, when you create and publish a Custom Tool (ctool), your name will be displayed for authorship credit.</li>
+                    <li><strong>Server ID & Server Name:</strong> Used for internal statistical purposes by the Admin Team. This helps us monitor usage scale and optimize server resources.</li>
+                    <li><strong>Server Member Nickname:</strong> Used in cross-server interaction features, such as the Multiplayer Animal Racing game. When members from different servers join the same match, this nickname helps players identify each other during the game.</li>
+                </ul>
+
+                <h2>3. DATA SHARING AND SECURITY</h2>
+                <ul>
+                    <li><strong>Sharing:</strong> We do not sell, trade, or transfer your personal information to third parties. Data is stored exclusively within MingSengBot's internal system.</li>
+                    <li><strong>Public Display:</strong> Certain information such as your Username or Nickname may be displayed publicly to other users via bot commands (e.g., multiplayer racing, game results, tool info).</li>
+                    <li><strong>Security:</strong> We implement necessary technical measures to protect data from unauthorized access. However, due to the nature of the internet, we cannot guarantee 100% absolute security.</li>
+                </ul>
+
+                <h2>4. USER RIGHTS</h2>
+                <p>You have control over your data regarding MingSengBot:</p>
+                <ul>
+                    <li><strong>Opt-out:</strong> You can stop providing data by removing the Bot from your server or ceasing the use of Bot commands.</li>
+                    <li><strong>Data Deletion Request:</strong> If you wish to completely delete your assets and personal information from our system, please contact an Admin via the Support Server. Note: This action is irreversible, and all virtual assets will be permanently lost.</li>
+                </ul>
+
+                <h2>5. POLICY CHANGES</h2>
+                <p>We may update this Privacy Policy from time to time. Any changes will be officially announced on the Support Server. Your continued use of the Bot after changes are posted constitutes your acceptance of the revised Privacy Policy.</p>
+
+                <h2>6. CONTACT US</h2>
+                <p>If you have any questions regarding your privacy, you can contact us at:</p>
+                <ul>
+                    <li>Discord Support Server: <a href="https://discord.gg/fv2RBWrqSt" target="_blank">https://discord.gg/fv2RBWrqSt</a></li>
+                    <li>Method: Create a support ticket in the <code>#𝘾𝙧𝙚𝙖𝙩𝙚</code> channel.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="../" class="logo">
+                    <img src="../assets/avatar.jpg" alt="Logo">
+                    <span>MingSengBot</span>
+                </a>
+                <p>
+                    Tự hào là Bot giải trí Economy từ đội ngũ phát triển Việt Nam, mang đến hệ thống tính năng đa dạng, vận hành ổn định và trải nghiệm mượt mà.
+                </p>
+                <div class="footer-social-gap">
+                    <a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=8" class="social-circle" title="Invite Bot">
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </a>
+                    <a href="#" class="social-circle" title="Vote Bot">
+                        <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="https://discord.gg/fv2RBWrqSt" class="social-circle" title="Join Support">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Liên kết</h4>
+                <ul>
+                    <li><a href="../">Trang chủ</a></li>
+                    <li><a href="../list/">Danh sách lệnh</a></li>
+                    <li><a href="../terms/">Điều khoản dịch vụ</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Cộng đồng</h4>
+                <ul>
+                    <li><a href="https://discord.gg/fv2RBWrqSt" target="_blank">Discord Server <i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
+                    <li><a href="#" target="_blank">Top.gg <i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Bot</h4>
+                <ul>
+                    <li><a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=8" target="_blank">Mời Bot <i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
+                    <li><a href="#" target="_blank">Bình chọn cho bot <i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
+                    <li><a href="https://discord.gg/fv2RBWrqSt" target="_blank">Hỗ trợ<i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
+                    </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 MingSengBot. All rights reversed.</i>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
