@@ -1,1 +1,282 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Điều khoản dịch vụ | MingSengBot</title>
+    <meta name="description" content="Điều khoản dịch vụ (Terms of Service) của MingSengBot. Quy định chi tiết về quyền lợi người dùng, quy tắc ứng xử, hệ thống tài sản ảo và các hành vi bị cấm khi sử dụng Bot.">
+    <meta name="keywords" content="MingSengBot, Discord Bot Việt Nam, Bot Tài Xỉu, Bot Economy, Bot Câu Cá, Bot Giải Trí, MSB Discord Bot, Bot Bầu Cua, Bot Mini-Games, Discord bot minigames, Discord Entertainment Bot, Discord bots, Discord VN Bot">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mingsengbot.vercel.app/">
+    <meta property="og:image" content="https://mingsengbot.vercel.app/assets/banner.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MingSengBot | Bot Giải Trí & Economy Đỉnh Cao">
+    <meta name="twitter:description" content="Nâng tầm Discord server với hệ thống Economy, Minigame, Câu cá, Đào mỏ hấp dẫn.">
+    <meta name="twitter:image" content="https://mingsengbot.vercel.app/assets/banner.png">
+    <meta property="og:title" content="Điều khoản dịch vụ | MingSengBot">
+    <meta property="og:description" content="Quy định sử dụng, quy tắc cộng đồng và chính sách về tài sản ảo khi tham gia hệ thống MingSengBot.">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/favicon.png">
+    <link rel="canonical" href="https://mingsengbot.vercel.app/terms/" />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+    <div class="glow-blob blob-1"></div>
+    <div class="glow-blob blob-2"></div>
+    <div id="particles-js"></div>
+    
+    <header>
+        <a href="../" class="logo">
+            <img src="../assets/avatar.jpg" alt="Logo">
+            <span>MingSengBot</span>
+        </a>
+        <nav class="nav-desktop">
+            <a href="../" class="nav-item">Trang chủ</a>
+            <a href="../list/" class="nav-item">Lệnh bot</a>
+            <a href="#" class="nav-item active">Điều khoản</a>
+            <a href="../privacy/" class="nav-item">Bảo mật</a>
+            <a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=8" class="btn-invite">Mời bot ngay</a>
+        </nav>
+        <div class="menu-btn glass-shine" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
 
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    
+    <div class="mobile-drawer glass-panel" id="drawer">
+        <div class="drawer-header">
+            <div class="logo">
+                <img src="../assets/avatar.jpg" alt="Logo">
+                <span>MingSengBot</span>
+            </div>
+            <div class="menu-btn" onclick="toggleMenu()" style="width: 35px; height: 35px; font-size: 1rem;">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="drawer-links">
+            <a href="../"><i class="fa-solid fa-house"></i> Trang chủ</a>
+            <a href="../list/"><i class="fa-solid fa-terminal"></i> Danh sách lệnh</a>
+            <a href="#" class="active"><i class="fa-solid fa-file-contract"></i> Điều khoản dịch vụ</a>
+            <a href="../privacy/"><i class="fa-solid fa-shield-halved"></i> Chính sách bảo mật</a>
+        </div>
+        <div style="margin-top: auto; display: flex; flex-direction: column; gap: 15px;">
+            <a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=8" class="btn btn-primary" style="justify-content: center;">
+                Mời bot ngay
+            </a>
+        </div>
+    </div>
+
+    <section class="legal-section">
+        
+        <div class="lang-switcher glass-panel">
+            <button class="lang-btn active" onclick="switchLang('vi')">
+                <span>🇻🇳</span> Tiếng Việt
+            </button>
+            <button class="lang-btn" onclick="switchLang('en')">
+                <span>🇺🇸</span> English
+            </button>
+        </div>
+
+        <div class="legal-content glass-panel">
+            
+            <div id="content-vi" class="lang-content">
+                <h1>ĐIỀU KHOẢN DỊCH VỤ</h1>
+                <p class="meta-info">Ngày có hiệu lực: 16 tháng 01, 2026<br>Phiên bản: 1.0</p>
+                
+                <p>Chào mừng bạn đến với MingSengBot. Bằng việc thêm bot vào máy chủ hoặc sử dụng bất kỳ tính năng nào của bot, bạn (sau đây gọi là "Người dùng") đã đồng ý ràng buộc bởi Điều khoản dịch vụ này và <a href="/privacy">Chính sách bảo mật (Privacy Policy)</a> của chúng tôi. Nếu bạn không đồng ý với bất kỳ phần nào trong các văn bản này, vui lòng ngừng sử dụng dịch vụ ngay lập tức.</p>
+
+                <h2>1. ĐỊNH NGHĨA</h2>
+                <ul>
+                    <li><strong>Bot:</strong> Là MingSengBot, một dịch vụ giải trí (Economy & Mini-games) trên nền tảng Discord.</li>
+                    <li><strong>Admin:</strong> Đội ngũ phát triển và quản trị viên có quyền cao nhất đối với hệ thống của MingSengBot.</li>
+                    <li><strong>Tài sản ảo:</strong> Bao gồm các loại tiền tệ (Gold, KCT), vật phẩm thu thập (Cá, Mỏ), vật phẩm tiêu hao (Ticket) và bất kỳ vật phẩm nào khác phát sinh trong quá trình sử dụng Bot.</li>
+                    <li><strong>Cơ chế ngẫu nhiên:</strong> Là các tính năng như mở Ticket, đào mỏ, câu cá mà kết quả được quyết định ngẫu nhiên bởi hệ thống (RNG).</li>
+                    <li><strong>Lạm dụng (Abuse):</strong> Hành vi khai thác lỗi phần mềm (bug), sử dụng script tự động (macro/botting) hoặc các thủ thuật không chính thống để trục lợi.</li>
+                </ul>
+
+                <h2>2. QUY TẮC ỨNG XỬ VÀ HÀNH VI CẤM</h2>
+                <p>Để duy trì một cộng đồng lành mạnh, người dùng tuyệt đối không được:</p>
+                <ul>
+                    <li>Sử dụng tính năng của bot (đặc biệt là hệ thống tặng quà/nhắn tin kèm quà) để lừa đảo, đe dọa, xúc phạm hoặc quấy rối người dùng khác.</li>
+                    <li>Yêu cầu hoặc thu thập thông tin cá nhân của người khác thông qua các tính năng của bot.</li>
+                    <li>Sử dụng bot để phát tán mã độc, liên kết lừa đảo hoặc nội dung vi phạm tiêu chuẩn cộng đồng của Discord.</li>
+                    <li>Khai thác lỗi (bug) của bot để tạo ra lợi thế bất công. Nếu phát hiện lỗi, người dùng có nghĩa vụ báo cáo cho Admin qua Support Server.</li>
+                </ul>
+
+                <h2>3. HỆ THỐNG ECONOMY VÀ TÀI SẢN ẢO</h2>
+                <ul>
+                    <li><strong>Giá trị:</strong> Tất cả Gold, KCT, Cá, Mỏ, Ticket... đều là tài sản ảo thuộc quyền quản lý của MingSengBot và không có giá trị quy đổi thành tiền thật hoặc hiện vật có giá trị bên ngoài hệ thống.</li>
+                    <li><strong>Quyền điều chỉnh dữ liệu:</strong> Admin chỉ can thiệp vào số dư tài sản của người dùng trong các trường hợp cụ thể sau:
+                        <ol>
+                            <li>Xử lý vi phạm: Thu hồi tài sản có được do lạm dụng lỗi (bug), sử dụng phần mềm can thiệp (macro/botting) hoặc lừa đảo người dùng khác.</li>
+                            <li>Khắc phục sự cố: Phục hồi hoặc điều chỉnh lại dữ liệu nếu xảy ra lỗi hệ thống dẫn đến mất mát tài sản hoặc sai lệch số dư (ví dụ: câu cá xong kiểm tra lại thì không thấy có, bị mất Gold không rõ nguyên nhân). Quyết định của Admin là quyết định cuối cùng.</li>
+                            <li>Hỗ trợ khiếu nại: Khi có bằng chứng xác thực về việc mất dữ liệu do lỗi khách quan từ phía máy chủ của Bot.</li>
+                        </ol>
+                    </li>
+                </ul>
+                <blockquote>
+                    <i class="fa-solid fa-circle-info"></i> <strong>Lưu ý:</strong> Quyết định của Admin là quyết định cuối cùng trong mọi trường hợp.
+                </blockquote>
+                <ul>
+                    <li><strong>Tính ngẫu nhiên:</strong> Các tính năng mở Ticket hoặc Mini-games có tỉ lệ nhận thưởng ngẫu nhiên. Người dùng chấp nhận rủi ro khi tham gia các tính năng này. Chúng tôi không giải quyết khiếu nại về việc "mở không ra đồ ngon" hoặc "vận đen".</li>
+                    <li><strong>Giao dịch:</strong> Nghiêm cấm mọi hình thức mua bán Tài sản ảo bằng tiền mặt hoặc các hình thức giao dịch ngoài hệ thống khác.</li>
+                </ul>
+
+                <h2>4. MIỄN TRỪ TRÁCH NHIỆM PHÁP LÝ</h2>
+                <ul>
+                    <li>MingSengBot là một dự án giải trí và được cung cấp trên cơ sở "nguyên trạng" (As Is). Chúng tôi không chịu trách nhiệm pháp lý đối với bất kỳ thiệt hại trực tiếp, gián tiếp hoặc hệ quả nào phát sinh từ việc sử dụng bot.</li>
+                    <li>Chúng tôi không chịu trách nhiệm về các giao dịch tự thỏa thuận giữa người dùng với nhau bên ngoài hệ thống của bot.</li>
+                </ul>
+
+                <h2>5. QUYỀN HẠN CỦA ADMIN</h2>
+                <ul>
+                    <li>Chúng tôi có quyền tạm ngưng hoặc chấm dứt cung cấp dịch vụ đối với các tài khoản vi phạm các quy tắc ứng xử mà không cần báo trước.</li>
+                    <li>Trong các tình huống tranh chấp hoặc các trường hợp chưa được quy định cụ thể trong văn bản này, chúng tôi sẽ đưa ra quyết định cuối cùng dựa trên tinh thần công bằng và bảo vệ cộng đồng.</li>
+                </ul>
+
+                <h2>6. THAY ĐỔI ĐIỀU KHOẢN</h2>
+                <ul>
+                    <li>Chúng tôi có quyền cập nhật và sửa đổi Điều khoản dịch vụ này để phù hợp với sự phát triển của hệ thống.</li>
+                    <li><strong>Thông báo thay đổi:</strong> Khi có các cập nhật quan trọng, Đội ngũ phát triển sẽ thông báo công khai tại Server Support và cập nhật nội dung mới nhất tại trang web chính thức.</li>
+                    <li><strong>Hiệu lực:</strong> Các thay đổi sẽ có hiệu lực ngay khi thông báo được phát đi. Việc người dùng tiếp tục sử dụng Bot sau thời điểm đó được coi là đã chấp thuận với ToS mới nhất.</li>
+                </ul>
+
+                <h2>7. THÔNG TIN LIÊN HỆ</h2>
+                <p>Mọi thắc mắc, báo cáo lỗi hoặc khiếu nại, vui lòng liên hệ với chúng tôi qua:</p>
+                <ul>
+                    <li>Discord Support Server: <a href="https://discord.gg/fv2RBWrqSt" target="_blank">https://discord.gg/fv2RBWrqSt</a></li>
+                    <li>Phương thức: Tạo Ticket hỗ trợ tại kênh <code>#𝘾𝙧𝙚𝙖𝙩𝙚</code></li>
+                </ul>
+            </div>
+
+            <div id="content-en" class="lang-content" style="display: none;">
+                <h1>TERMS OF SERVICE</h1>
+                <p class="meta-info">Effective Date: January 16, 2026<br>Version: 1.0</p>
+                
+                <p>Welcome to MingSengBot. By adding this bot to your server or using any of its features, you (hereinafter referred to as the "User") agree to be bound by these Terms of Service and our <a href="/privacy">Privacy Policy</a>. If you do not agree with any part of these documents, please cease using our services immediately.</p>
+
+                <h2>1. DEFINITIONS</h2>
+                <ul>
+                    <li><strong>Bot:</strong> Refers to MingSengBot, an entertainment service (Economy & Mini-games) on the Discord platform.</li>
+                    <li><strong>Admin:</strong> The development and administration team with the highest authority over the MingSengBot system.</li>
+                    <li><strong>Virtual Assets:</strong> Includes currencies (Gold, KCT), collectible items (Fish, Ore), consumable items (Tickets), and any other items generated during the use of the Bot.</li>
+                    <li><strong>Randomized Mechanisms:</strong> Features such as opening Tickets, mining, or fishing, where outcomes are determined by a Random Number Generator (RNG).</li>
+                    <li><strong>Abuse:</strong> The act of exploiting software bugs, using automated scripts (macros/botting), or employing unofficial tricks for unfair gain.</li>
+                </ul>
+
+                <h2>2. CODE OF CONDUCT AND PROHIBITED BEHAVIOR</h2>
+                <p>To maintain a healthy community, users are strictly prohibited from:</p>
+                <ul>
+                    <li>Using bot features (especially the gifting/messaging system) to scam, threaten, insult, or harass other users.</li>
+                    <li>Requesting or collecting the personal information of others through bot features.</li>
+                    <li>Using the bot to distribute malware, phishing links, or content that violates Discord's Community Standards.</li>
+                    <li>Exploiting bot bugs to gain an unfair advantage. If a bug is discovered, the user is obligated to report it to the Admin via the Support Server.</li>
+                </ul>
+
+                <h2>3. ECONOMY SYSTEM AND VIRTUAL ASSETS</h2>
+                <ul>
+                    <li><strong>Value:</strong> All Gold, KCT, Fish, Ore, Tickets, etc., are virtual assets managed by MingSengBot and have no real-world value. They cannot be converted into cash or any physical goods outside the system.</li>
+                    <li><strong>Data Adjustment Rights:</strong> The Admin will only intervene in a user's asset balance in the following specific cases:
+                        <ul>
+                            <li><strong>Violation Handling:</strong> To reclaim assets obtained through bug abuse, use of third-party software (macros/botting), or scamming other users.</li>
+                            <li><strong>Incident Recovery:</strong> To restore or adjust data if a system error leads to loss of assets or balance discrepancies (e.g., fishing successfully but the item does not appear, or unexplained loss of Gold).</li>
+                            <li><strong>Complaint Support:</strong> When there is valid evidence of data loss due to objective server-side errors.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <blockquote>
+                    <i class="fa-solid fa-circle-info"></i> <strong>Note:</strong> The Admin's decision is final in all cases.
+                </blockquote>
+                <ul>
+                    <li><strong>Randomness:</strong> Ticket features and Mini-games involve randomized reward rates. Users accept all risks when participating in these features. We do not resolve complaints regarding "bad luck" or "not receiving high-tier items."</li>
+                    <li><strong>Transactions:</strong> All forms of buying or selling Virtual Assets for real money (RMT) or any other off-system transactions are strictly prohibited.</li>
+                </ul>
+
+                <h2>4. DISCLAIMER</h2>
+                <ul>
+                    <li>MingSengBot is an entertainment project provided on an "As Is" basis. We are not legally liable for any direct, indirect, or consequential damages arising from the use of the bot.</li>
+                    <li>We are not responsible for any private agreements or transactions made between users outside of the bot's official system.</li>
+                </ul>
+
+                <h2>5. ADMIN AUTHORITY</h2>
+                <ul>
+                    <li>We reserve the right to suspend or terminate services for accounts that violate the code of conduct without prior notice.</li>
+                    <li>In the event of disputes or cases not specifically covered in this document, the Admin will make the final decision based on fairness and the protection of the community.</li>
+                </ul>
+
+                <h2>6. AMENDMENTS TO TERMS</h2>
+                <ul>
+                    <li>We reserve the right to update and modify these Terms of Service to reflect the development of the system.</li>
+                    <li><strong>Notification:</strong> For significant updates, the Development Team will post a public announcement on the Support Server and update the content on the official website.</li>
+                    <li><strong>Effectiveness:</strong> Changes take effect immediately upon announcement. Continued use of the Bot after that time constitutes acceptance of the updated ToS.</li>
+                </ul>
+
+                <h2>7. CONTACT INFORMATION</h2>
+                <p>For any questions, bug reports, or complaints, please contact us via:</p>
+                <ul>
+                    <li>Discord Support Server: <a href="https://discord.gg/fv2RBWrqSt" target="_blank">https://discord.gg/fv2RBWrqSt</a></li>
+                    <li>Method: Create a support ticket in the <code>#𝘾𝙧𝙚𝙖𝙩𝙚</code> channel.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="../" class="logo">
+                    <img src="../assets/avatar.jpg" alt="Logo">
+                    <span>MingSengBot</span>
+                </a>
+                <p>
+                    Tự hào là Bot giải trí Economy từ đội ngũ phát triển Việt Nam, mang đến hệ thống tính năng đa dạng, vận hành ổn định và trải nghiệm mượt mà.
+                </p>
+                <div class="footer-social-gap">
+                    <a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=8" class="social-circle" title="Invite Bot">
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </a>
+                    <a href="#" class="social-circle" title="Vote Bot">
+                        <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="https://discord.gg/fv2RBWrqSt" class="social-circle" title="Join Support">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Liên kết</h4>
+                <ul>
+                    <li><a href="../">Trang chủ</a></li>
+                    <li><a href="../list/">Danh sách lệnh</a></li>
+                    <li><a href="#">Điều khoản dịch vụ</a></li>
+                    <li><a href="../privacy/">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Cộng đồng</h4>
+                <ul>
+                    <li><a href="https://discord.gg/fv2RBWrqSt" target="_blank">Discord Server <i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
+                    <li><a href="#" target="_blank">Top.gg <i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Bot</h4>
+                <ul>
+                    <li><a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=8" target="_blank">Mời Bot <i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
+                    <li><a href="#" target="_blank">Bình chọn cho bot <i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
+                    <li><a href="https://discord.gg/fv2RBWrqSt" target="_blank">Hỗ trợ<i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
+                    </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 MingSengBot. All rights reversed.</i>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
