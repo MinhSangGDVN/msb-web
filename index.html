@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ | MingSengBot</title>
+    <meta name="description" content="Bot giải trí & Economy hàng đầu cho Discord Việt Nam. Tích hợp Mini-game Tài xỉu, Bầu cua, Đua thú, Uno cùng hệ thống cày cuốc Câu cá, Đào mỏ và chợ đen vật phẩm sôi động.">
+    <meta name="keywords" content="MingSengBot, Discord Bot Việt Nam, Bot Tài Xỉu, Bot Economy, Bot Câu Cá, Bot Giải Trí, MSB Discord Bot, Bot Bầu Cua, Bot Mini-Games, Discord bot minigames, Discord Entertainment Bot, Discord bots, Discord VN Bot">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mingsengbot.vercel.app/">
+    <meta property="og:image" content="https://mingsengbot.vercel.app/assets/banner.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MingSengBot | Bot Giải Trí & Economy Đỉnh Cao">
+    <meta name="twitter:description" content="Nâng tầm Discord server với hệ thống Economy, Minigame, Câu cá, Đào mỏ hấp dẫn.">
+    <meta name="twitter:image" content="https://mingsengbot.vercel.app/assets/banner.png">
+    <meta property="og:title" content="MingSengBot | Bot Giải Trí & Economy Đỉnh Cao Được Phát Triển Bởi Người Việt">
+    <meta property="og:description" content="Nâng tầm Discord server với hệ thống Economy, Minigame (Tài xỉu, Bầu cua, Uno...), Câu cá, Đào mỏ và Đua thú hấp dẫn. Tham gia ngay!">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    <link rel="canonical" href="https://mingsengbot.vercel.app/" />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="glow-blob blob-1"></div>
+    <div class="glow-blob blob-2"></div>
+    <div id="particles-js"></div>
+    <header>
+        <a href="#" class="logo">
+            <img src="assets/avatar.jpg" alt="Logo">
+            <span>MingSengBot</span>
+        </a>
+        <nav class="nav-desktop">
+            <a href="#" class="nav-item">Trang chủ</a>
+            <a href="./list/" class="nav-item">Lệnh bot</a>
+            <a href="./terms/" class="nav-item">Điều khoản</a>
+            <a href="./privacy/" class="nav-item">Bảo mật</a>
+            <a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=8" class="btn-invite">Mời bot ngay</a>
+        </nav>
+        <div class="menu-btn glass-shine" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    <div class="mobile-drawer glass-panel" id="drawer">
+        <div class="drawer-header">
+            <div class="logo">
+                <img src="assets/avatar.jpg" alt="Logo">
+                <span>MingSengBot</span>
+            </div>
+            <div class="menu-btn" onclick="toggleMenu()" style="width: 35px; height: 35px; font-size: 1rem;">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="drawer-links">
+            <a href="#"><i class="fa-solid fa-house"></i> Trang chủ</a>
+            <a href="./list/"><i class="fa-solid fa-terminal"></i> Danh sách lệnh</a>
+            <a href="./terms/"><i class="fa-solid fa-file-contract"></i> Điều khoản dịch vụ</a>
+            <a href="./privacy/"><i class="fa-solid fa-shield-halved"></i> Chính sách bảo mật</a>
+        </div>
+        <div style="margin-top: auto; display: flex; flex-direction: column; gap: 15px;">
+            <a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=8" class="btn btn-primary" style="justify-content: center;">
+                Mời bot ngay
+            </a>
+        </div>
+    </div>
+    <section class="main">
+        <div class="main-badge">
+            <i class="fa-solid fa-bolt"></i> Phiên bản V5
+        </div>
+        <h1>Nâng tầm Server Discord<br>Của bạn với <span>MSB</span></h1>
+        <p>
+            Bot giải trí đa năng tích hợp hệ thống kinh tế (Economy) hấp dẫn và các minigame tương tác giữ lửa cho cộng đồng như Tài xỉu, Bầu cua, Đua thú. Hệ thống cày cuốc Đào mỏ, Câu cá chuyên sâu cùng kho vật phẩm đồ sộ đang chờ bạn khám phá.
+        </p>
+        <div class="main-btns">
+            <a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=8" class="btn btn-primary glass-shine">
+                <i class="fa-brands fa-discord"></i> Mời Bot ngay
+            </a>
+            <a href="https://discord.gg/fv2RBWrqSt" class="btn btn-glass glass-shine">
+                <i class="fa-solid fa-user-group"></i> Hỗ trợ (Discord)
+            </a>
+        </div>
+    </section>
+    <section class="section">
+        <div class="section-header">
+            <h2>Tính năng <span>nổi bật</span></h2>
+            <p style="color: var(--text-muted)">Những công cụ mạnh mẽ MSB mang lại cho cộng đồng của bạn.</p>
+        </div>
+        <div class="feature-grid">
+            <div class="card glass-panel">
+                <div class="icon-box"><i class="fa-solid fa-gamepad"></i></div>
+                <h3>Mini-games Đa dạng</h3>
+                <p>Kho trò chơi phong phú: Tài xỉu, Bầu cua, Thử thách gõ chữ, Tung đồng xu, Câu cá, Đào mỏ,... giúp thành viên giải trí cực đã.</p>
+            </div>
+            <div class="card glass-panel">
+                <div class="icon-box"><i class="fa-solid fa-coins"></i></div>
+                <h3>Hệ thống Economy</h3>
+                <p>Cày tiền, mua vật phẩm, tham gia xổ số, cá cược và cạnh tranh trên bảng xếp hạng server toàn cầu.</p>
+            </div>
+            <div class="card glass-panel">
+                <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>An toàn và đáng tin cậy</h3>
+                <p>Hoạt động ổn định, bảo mật cao, và được cập nhật thường xuyên với các tính năng mới.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="section-header">
+            <h2>Câu hỏi <span>thường gặp</span></h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item glass-panel" onclick="toggleFaq(this)">
+                <div class="faq-header">
+                    <span>Làm sao để thêm bot vào server?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-body">
+                    Rất đơn giản! Bạn chỉ cần nhấn nút "Mời Bot ngay" ở đầu trang web, chọn Server bạn muốn thêm bot vào và cấp quyền cho nó.
+                </div>
+            </div>
+            <div class="faq-item glass-panel" onclick="toggleFaq(this)">
+                <div class="faq-header">
+                    <span>Tiền của tôi có được đồng bộ giữa các Server không?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-body">
+                    Có! MSB sử dụng hệ thống <strong>Global Economy</strong>. Toàn bộ số dư Gold, KCT và vật phẩm trong túi đồ của bạn sẽ được giữ nguyên cho dù bạn tham gia ở bất kỳ máy chủ Discord nào có MSB.
+                </div>
+            </div>
+            <div class="faq-item glass-panel" onclick="toggleFaq(this)">
+                <div class="faq-header">
+                    <span>Tôi có thể đóng góp ý tưởng cho Bot không?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-body">
+                    Chúng tôi luôn trân trọng mọi ý kiến đóng góp! Bạn có thể gửi ý tưởng về các mini-game mới hoặc tính năng mới tại Server Support. Những đóng góp hữu ích sẽ nhận được những phần quà đặc biệt từ Admin.
+                </div>
+            </div>
+            <div class="faq-item glass-panel" onclick="toggleFaq(this)">
+                <div class="faq-header">
+                    <span>Tôi phải làm gì nếu gặp lỗi hoặc mất dữ liệu?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-body">
+                    Bạn hãy tham gia ngay Server Support chính thức của MSB và tạo Ticket hỗ trợ tại kênh <code>#𝘾𝙧𝙚𝙖𝙩𝙚</code>. Đội ngũ phát triển sẽ hỗ trợ bạn sớm nhất có thể!
+                </div>
+            </div>
+            <div class="faq-item glass-panel" onclick="toggleFaq(this)">
+                <div class="faq-header">
+                    <span>Tiền tố (Prefix) chính thức của Bot là gì?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-body">
+                    MSB sử dụng Prefix mặc định là <code>s</code>. Bạn chỉ cần gõ <code>s</code> + <code>tên lệnh</code> (ví dụ: <code>shelp</code>, <code>sme</code>, <code>scauca</code>) để tương tác với Bot.
+                </div>
+            </div>
+            <div class="faq-item glass-panel" onclick="toggleFaq(this)">
+                <div class="faq-header">
+                    <span>Bot có hoạt động 24/7 không?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-body">
+                    MSB được vận hành trên máy chủ chuyên dụng với độ ổn định cao nhất, đảm bảo phục vụ cộng đồng 24/7.
+                </div>
+            </div>
+            <div class="faq-item glass-panel" onclick="toggleFaq(this)">
+                <div class="faq-header">
+                    <span>Bot có thu phí không?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-body">
+                    Hiện tại MSB hoàn toàn miễn phí cho mọi tính năng.
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="assets/avatar.jpg" alt="Logo">
+                    <span>MingSengBot</span>
+                </a>
+                <p>
+                    Tự hào là Bot giải trí Economy từ đội ngũ phát triển Việt Nam, mang đến hệ thống tính năng đa dạng, vận hành ổn định và trải nghiệm mượt mà.
+                </p>
+                <div class="footer-social-gap">
+                    <a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=8" class="social-circle" title="Invite Bot">
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </a>
+                    <a href="#" class="social-circle" title="Vote Bot">
+                        <i class="fa-solid fa-star"></i>
+                    </a>
+                    <a href="https://discord.gg/fv2RBWrqSt" class="social-circle" title="Join Support">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Liên kết</h4>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="./list/">Danh sách lệnh</a></li>
+                    <li><a href="./terms/">Điều khoản dịch vụ</a></li>
+                    <li><a href="./privacy/">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Cộng đồng</h4>
+                <ul>
+                    <li><a href="https://discord.gg/fv2RBWrqSt" target="_blank">Discord Server <i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
+                    <li><a href="#" target="_blank">Top.gg <i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Bot</h4>
+                <ul>
+                    <li><a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=8" target="_blank">Mời Bot <i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
+                    <li><a href="#" target="_blank">Bình chọn cho bot <i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
+                    <li><a href="https://discord.gg/fv2RBWrqSt" target="_blank">Hỗ trợ<i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
+                    </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 MingSengBot. All rights reversed.</i>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
