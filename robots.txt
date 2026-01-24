@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /invite
+Disallow: /topgg
+Disallow: /vote
 
 Sitemap: https://mingsengbot.vercel.app/sitemap.xml
