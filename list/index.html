@@ -75,7 +75,7 @@
             <div class="hint-icon"><i class="fa-brands fa-discord"></i></div>
             <div class="hint-text">
                 <h3>Mẹo nhỏ!</h3>
-                <p>Bạn có thể sử dụng lệnh <code>shelp</code> ngay trong Discord để xem danh sách lệnh mới nhất và chính xác nhất mà không cần mở web.</p>
+                <p>Danh sách lệnh trên web đôi khi có thể không phải là phiên bản mới nhất. Hãy sử dụng lệnh <code>shelp</code> trực tiếp trên Discord để luôn cập nhật danh sách lệnh đầy đủ và chính xác nhất nhé!</p>
             </div>
         </div>
 
@@ -90,9 +90,9 @@
                 <ul>
                     <li class="active" onclick="scrollToCategory('economy')"><i class="fa-solid fa-coins"></i> Kinh tế & Cá nhân</li>
                     <li onclick="scrollToCategory('games')"><i class="fa-solid fa-gamepad"></i> Trò chơi & Giải trí</li>
-                    <li onclick="scrollToCategory('jobs')"><i class="fa-solid fa-hammer"></i> Câu cá & Đào mỏ</li>
-                    <li onclick="scrollToCategory('rank')"><i class="fa-solid fa-trophy"></i> Xếp hạng & Thi đấu</li>
+                    <li onclick="scrollToCategory('jobs')"><i class="fa-solid fa-hammer"></i> Câu cá, Đào mỏ & Săn thú</li>
                     <li onclick="scrollToCategory('items')"><i class="fa-solid fa-bag-shopping"></i> Vật phẩm & Thú cưng</li>
+                    <li onclick="scrollToCategory('rank')"><i class="fa-solid fa-trophy"></i> Xếp hạng & Thi đấu</li>
                     <li onclick="scrollToCategory('system')"><i class="fa-solid fa-gear"></i> Tiện ích & Hệ thống</li>
                 </ul>
             </div>
@@ -104,39 +104,43 @@
                     <div class="cmd-grid">
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sdaily</code></div>
-                            <p>Điểm danh hàng ngày, nhận 10-100 Gold và tỉ lệ 10% nhận Ticket.</p>
+                            <p>Điểm danh và nhận quà hàng ngày, ngẫu nhiên từ 10 - 100 Gold và có tỉ lệ 10% nhận được 1 Ticket.</p>
                         </div>
                         <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>sme</code> <code>scash</code> <code>sacc</code></div>
-                            <p>Xem số dư Gold, Ticket, KCT và Cá trong tài khoản của bạn.</p>
+                            <div class="cmd-header"><code>sme</code> <code>scash</code> <code>sacc</code> <code>sgold</code> <code>sticket</code> <code>skct</code> <code>sbal</code></div>
+                            <p>Xem số dư Gold, Ticket, KCT và Cá trong tài khoản.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>suser @mention</code></div>
-                            <p>Xem thông tin tài khoản và số dư của người khác.</p>
+                            <p>Xem số dư Gold, Ticket, KCT và Cá trong tài khoản của người khác.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sgive @mention [số lượng] [loại]</code></div>
-                            <p>Chuyển tiền hoặc vật phẩm cho người khác.</p>
+                            <p>Chuyển tiền hoặc tài sản cho người khác.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sanxin @mention [số lượng] [loại]</code></div>
-                            <p>Xin tiền hoặc vật phẩm từ người được nhắc đến.</p>
+                            <p>Lệnh xin tiền của người được mention.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sstreak</code></div>
-                            <p>Xem chuỗi điểm danh của bạn hoặc người chơi khác.</p>
+                            <p>Xem chuỗi điểm danh hiện tại của bạn hoặc người khác.</p>
                         </div>
                         <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>strade @mention [SL 1] [VP 1] to [SL 2] [VP 2]</code></div>
-                            <p>Trao đổi tài sản với người khác. Ví dụ: đổi Gold lấy Ticket.</p>
+                            <div class="cmd-header"><code>strade @mention ...</code></div>
+                            <p>Cú pháp: <code>strade @mention [số VP bạn đổi] [loại] to [số VP người khác đổi] [loại]</code>. Trao đổi tài sản với người khác.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sbank</code></div>
-                            <p>Mở giao diện ngân hàng. Dùng <code>sbank check</code> để kiểm tra nhanh số dư.</p>
+                            <p>Mở ngân hàng, các lệnh khác liên quan đến sbank có thể được xem trong lệnh này.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sbank check</code></div>
+                            <p>Kiểm tra nhanh số dư trong ngân hàng.</p>
                         </div>
                          <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>stickettogold</code></div>
-                            <p>Đổi 1 Ticket sang Gold (nhận ngẫu nhiên 100 - 1000 Gold).</p>
+                            <p>Đổi Ticket sang Gold (sẽ nhận được ngẫu nhiên từ 100 đến 1000).</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sbadge</code></div>
@@ -144,7 +148,31 @@
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sprovince</code></div>
-                            <p>Cài đặt tỉnh/thành phố của bạn (để hiển thị trên bảng xếp hạng).</p>
+                            <p>Cài đặt tỉnh/thành để đại diện trên BXH.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>snv</code> <code>sjob</code> <code>squest</code></div>
+                            <p>Làm nhiệm vụ hàng ngày để nhận thêm phần thưởng.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sbag</code></div>
+                            <p>Mở các vật phẩm sự kiện như giỏ quà, túi lộc, rương báu,...</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sinv</code></div>
+                            <p>Xem và kích hoạt các thẻ buff cho tài khoản.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>skt</code> <code>sgdp</code> <code>seconomy</code></div>
+                            <p>Xem thống kê kinh tế trên toàn servers.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>stttm</code> <code>scho</code></div>
+                            <p>Trung tâm thương mại (hiện đang thử nghiệm).</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sdh</code> <code>sdanhhieu</code></div>
+                            <p>Cài đặt danh hiệu hiển thị trên hồ sơ (trong <code>sme</code> & <code>suser</code>).</p>
                         </div>
                     </div>
                 </div>
@@ -153,114 +181,182 @@
                     <h2><i class="fa-solid fa-gamepad"></i> Trò chơi & Giải trí</h2>
                     <div class="cmd-grid">
                         <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>sbaucua</code></div>
-                            <p>Chơi mini-game Bầu Cua.</p>
+                            <div class="cmd-header"><code>sbaucua</code> <code>sbc</code></div>
+                            <p>Chơi mini-game Bầu cua.</p>
                         </div>
                         <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>staixiu</code></div>
-                            <p>Chơi mini-game Tài Xỉu.</p>
+                            <div class="cmd-header"><code>staixiu</code> <code>stx</code></div>
+                            <p>Chơi mini-game Tài xỉu.</p>
                         </div>
                         <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>scaothap</code> <code>shilo</code></div>
-                            <p>Chơi Cao Thấp (High/Low).</p>
+                            <div class="cmd-header"><code>scaothap</code> <code>sct</code> <code>shilo</code></div>
+                            <p>Chơi Cao thấp (High/Low).</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>smk</code></div>
+                            <p>Chơi trò chơi giải mã mật khẩu 4 số ngẫu nhiên nhận gold miễn phí (tối đa 1 lần/ngày).</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>svb</code> <code>svault</code> <code>sbreak</code> <code>sbreaker</code></div>
-                            <p>Chơi Kẻ Trộm Phá Két Sắt.</p>
+                            <p>Chơi trò chơi kẻ trộm phá két sắt cược gold.</p>
                         </div>
                         <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>soantuti [cược]</code> <code>skbb</code></div>
-                            <p>Chơi Oẳn Tù Tì (Kéo Búa Bao) 1vs1 hoặc với Bot.</p>
+                            <div class="cmd-header"><code>staixiurank</code></div>
+                            <p>Chơi tài xỉu xếp hạng (thử nghiệm, sắp được làm lại hoàn toàn).</p>
                         </div>
                         <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>suno [số người] [cược]</code></div>
-                            <p>Tạo phòng chơi UNO (2-6 người). Dùng <code>suno fl</code> để theo dõi lại bàn chơi (Thử nghiệm).</p>
+                            <div class="cmd-header"><code>suno</code></div>
+                            <p>Chơi uno (thử nghiệm).</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sunofl [id]</code></div>
+                            <p>Theo dõi lại trận uno ở kênh hiện tại tránh bị trôi tin nhắn.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>soantuti [số gold]</code> <code>skbb</code> <code>skeobuabao</code></div>
+                            <p>Chơi kéo búa bao 1 vs 1 hoặc chơi trực tiếp với bot.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>srace</code></div>
-                            <p>Chơi đua thú (cược x3 thưởng).</p>
+                            <p>Chơi đua thú, chọn động vật, cược gold và nhận x3 phần thưởng! 🤓</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sraces</code></div>
-                            <p>Đua thú multiplayer ghép trận online.</p>
+                            <p>Chơi đua thú ghép trận multiplayer 💥</p>
                         </div>
                          <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>smatch</code> <code>sfast</code></div>
-                            <p>Thử thách gõ chữ nhanh, nhận x2 Gold nếu thắng.</p>
+                            <div class="cmd-header"><code>smatch</code> <code>sfast</code> <code>sft</code></div>
+                            <p>Chơi thử thách gõ chữ nhanh để nhận x2 gold nếu thắng.</p>
                         </div>
                          <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>squayso</code> <code>sdial</code></div>
-                            <p>Quay số may mắn (Cược 500 Gold).</p>
+                            <p>Chơi quay số nhận Gold (Cược 500 Gold).</p>
                         </div>
                         <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>sdice [mặt] [cược]</code></div>
-                            <p>Chơi xúc xắc 6 mặt (Tỉ lệ 1:5, trả thưởng x6).</p>
+                            <div class="cmd-header"><code>sdice [mặt] [số gold cược]</code></div>
+                            <p>Chơi xúc xắc 6 mặt cược gold với tỉ lệ 1:5 (trả thưởng x6).</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sbj [số gold]</code></div>
+                            <p>Chơi blackjack (xì dách).</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>slixi [số gold]</code></div>
-                            <p>Lì xì Gold cho những người nhanh tay nhất trong kênh.</p>
+                            <p>Lì xì Gold cho mọi người có mặt trong kênh.</p>
                         </div>
                         <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>sfac [h/t] [cược]</code></div>
-                            <p>Tung đồng xu (Flip a Coin) với bot.</p>
+                            <div class="cmd-header"><code>sfac [h/t] [số gold]</code></div>
+                            <p>Chơi tung đồng xu (Head or Tails) với bot.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sr [1-100]</code></div>
-                            <p>Đoán con số bí ẩn từ 1 đến 100 với Bot.</p>
+                            <p>Chơi đoán số bí ẩn với bot.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>spuzzle</code></div>
-                            <p>Chơi đố vui nhận Gold (Cooldown 1 tiếng).</p>
+                            <p>Chơi đố vui nhận gold (có cooldown 1 tiếng).</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sxs</code> <code>sxoso</code></div>
-                            <p>Mua vé số may mắn.</p>
+                            <p>Mua vé số thử vận may.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>stool</code></div>
-                            <p>Máy đo độ gay, femboy, cute, giàu, simp, genz, sợ ma,...</p>
+                            <p>Máy đo độ gay, femboy, cute, ngáo, giàu, may mắn, lười, bel, nghiện gd, nghiện mc, simp, genz, cô đơn, sợ ma,... (cho vui, đề nghị ko quạo 🐧👍).</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sc</code></div>
-                            <p>Trò chơi so sánh món ăn, Bot sẽ đoán tính cách ẩm thực của bạn.</p>
+                            <p>Chơi trò chơi so sánh các món ăn và bot sẽ đoán tính cách ẩm thực của bạn! (thử nghiệm).</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>srandint</code> <code>sranint [bắt đầu] [kết thúc]</code></div>
+                            <p>Lấy ngẫu nhiên 1 số nguyên trong khoảng yêu cầu.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>smath</code> <code>sdt</code> <code>sdautruong</code></div>
+                            <p>Chơi giải toán nhận gold miễn phí (lớp 1-12).</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sdemso</code> / <code>statdemso</code></div>
+                            <p>Đặt/Tắt kênh hiện tại thành kênh đếm số cho server của bạn.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sxo @mention</code> <code>scaro @mention</code></div>
+                            <p>Chơi cờ caro với người được đề cập.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>scom</code></div>
+                            <p>Chơi đố vui (không giới hạn), những câu đố trong đây là được đóng góp bởi cộng đồng.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>smaze</code> <code>smp</code></div>
+                            <p>Chơi mê cung maze paint.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>stest</code></div>
+                            <p>Bài kiểm tra coding (hiện có 600 câu).</p>
                         </div>
                     </div>
                 </div>
 
                 <div id="jobs" class="cmd-category">
-                    <h2><i class="fa-solid fa-hammer"></i> Câu cá & Đào mỏ</h2>
+                    <h2><i class="fa-solid fa-hammer"></i> Câu cá, Đào mỏ & Săn thú</h2>
                     <div class="cmd-grid">
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sfish</code></div>
-                            <p>Trang chủ câu cá, xem hướng dẫn và thông tin.</p>
+                            <p>Trang chủ của lệnh câu cá, có hướng dẫn câu cá và bán cá.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>scauca</code></div>
-                            <p>Câu cá (6 phút/lần). Có cơ hội nhận cá hiếm.</p>
+                            <p>Câu cá (6 phút dùng được 1 lần), có tỉ lệ câu được cá đặc biệt.</p>
                         </div>
                         <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>sbanca [số lượng/all]</code></div>
-                            <p>Bán cá lấy Gold (2 phút/lần).</p>
+                            <div class="cmd-header"><code>sbanca [số lượng / all]</code></div>
+                            <p>Bán cá (yêu cầu nhập số lượng hoặc <code>all</code>, 2 phút dùng được 1 lần).</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sdaomo</code></div>
-                            <p>Đào mỏ tìm quặng và tài nguyên (2 phút/lần).</p>
+                            <p>Đào mỏ để tìm quặng (Cooldown 2 phút).</p>
                         </div>
                         <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>sore</code> <code>squang</code></div>
-                            <p>Kiểm tra kho quặng, thỏi đúc và nguyên liệu của bạn hoặc người khác.</p>
+                            <div class="cmd-header"><code>sore</code> <code>smo</code> <code>squang</code></div>
+                            <p>Kiểm tra kho quặng, thỏi và nguyên liệu của bạn.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>spickaxe</code></div>
                             <p>Xem và trang bị cúp đào mỏ.</p>
                         </div>
                         <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sluyenkim</code></div>
+                            <p>Mở lò nung để luyện quặng thành thỏi.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sluyenkim "[tên quặng]" [số lượng]</code></div>
-                            <p>Nung quặng thành thỏi (yêu cầu than).</p>
+                            <p>Bắt đầu nung quặng (yêu cầu than).</p>
                         </div>
                          <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>sbanmo "[tên]" [số lượng]</code></div>
-                            <p>Bán quặng hoặc thỏi lấy Gold.</p>
+                            <div class="cmd-header"><code>sbanmo "[tên tài nguyên]" [số lượng]</code></div>
+                            <p>Bán quặng/thỏi (lấy tên chính xác từ <code>sore</code>).</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>stkcauca</code> <code>sthongkecauca</code></div>
+                            <p>Xem thống kê sự nghiệp câu cá của bạn.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>ssanthu</code></div>
+                            <p>Săn thú (yêu cầu có kiếm mua trong <code>sshop</code>, cooldown 4 phút).</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>svukhi</code></div>
+                            <p>Quản lý vũ khí, xem kho vũ khí.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sthu</code></div>
+                            <p>Xem danh sách thú đã săn bắt được.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sexp</code></div>
+                            <p>Đổi exp sang sách enchant (hơi phi lí thông cảm 🐧).</p>
                         </div>
                     </div>
                 </div>
@@ -270,27 +366,27 @@
                     <div class="cmd-grid">
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>spet</code></div>
-                            <p>Xem thú cưng của bạn hoặc người khác.</p>
+                            <p>Xem thú cưng của bạn hoặc của người khác :3.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sshop</code></div>
-                            <p>Cửa hàng mua thú cưng và vật phẩm.</p>
+                            <p>Cửa hàng flash sale, thú cưng, thức ăn, kiếm săn thú, cúp đào mỏ, huy hiệu và backgrounds.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sitem</code></div>
-                            <p>Xem bộ sưu tập vật phẩm đặc biệt của bạn hoặc người khác.</p>
+                            <p>Xem vật phẩm đặc biệt đã sưu tầm.</p>
                         </div>
                         <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>ssell [số lượng] [item] [giá]</code></div>
-                            <p>Bán vật phẩm đặc biệt cho người chơi khác (Chợ đen).</p>
+                            <div class="cmd-header"><code>ssell [số lượng] [vật phẩm] [giá]</code></div>
+                            <p>Bán vật phẩm đặc biệt cho người chơi khác.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>staiche</code></div>
-                            <p>Tái chế rác thu được khi câu cá để lấy Gold.</p>
+                            <p>Bán/tái chế rác nhặt được để lấy lại Gold :).</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>scard</code></div>
-                            <p>Xem bộ sưu tập thẻ bài (Cần bật thông báo trong ssettings).</p>
+                            <p>Xem số thẻ bài đã thu thập được. Để bắt đầu thu thập, hãy bật thông báo tại <code>ssettings</code>.</p>
                         </div>
                     </div>
                 </div>
@@ -299,36 +395,76 @@
                     <h2><i class="fa-solid fa-trophy"></i> Xếp hạng & Thi đấu</h2>
                     <div class="cmd-grid">
                         <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sclan</code> / <code>snvclan</code></div>
+                            <p>Hệ thống bang hội / Nhiệm vụ bang hội.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sclanbhc</code> / <code>sbhc</code></div>
+                            <p>Xem bang hội chiến clan của bạn / Xem lịch sử bang hội chiến của các clans khác.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sbxh</code></div>
-                            <p>Xem BXH đại gia (Top Gold).</p>
+                            <p>Xem bảng xếp hạng những người chơi có số Gold cao nhất.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sbxhfish</code></div>
-                            <p>Xem BXH sát ngư (Top câu cá).</p>
+                            <p>Xem bảng xếp hạng những người chơi câu được nhiều cá nhất (từ trước đến nay).</p>
                         </div>
                          <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sbxhitem</code></div>
-                            <p>Xem BXH nhà sưu tầm (Top điểm vật phẩm).</p>
+                            <p>Xem bảng xếp hạng những người chơi có nhiều điểm sưu tầm nhất.</p>
                         </div>
                          <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sbxhstreak</code></div>
-                            <p>Xem BXH chiến thần chuyên cần (Top chuỗi điểm danh).</p>
+                            <p>Xem bảng xếp hạng chuỗi điểm danh cao nhất (mất chuỗi = bay khỏi bảng xếp hạng).</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sbxhkct</code></div>
+                            <p>Xem bảng xếp hạng người nắm giữ nhiều kim cương tím.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sbxhclan</code></div>
+                            <p>Xem bảng xếp hạng clans.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sbxhrank</code></div>
+                            <p>Xem bảng xếp hạng chế độ rank.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sbxhexp</code> / <code>sbxhsanthu</code></div>
+                            <p>Xem bảng xếp hạng săn thú theo exp / số lượng thú săn được.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>skyluc</code></div>
+                            <p>Xem kỷ lục thế giới.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>splace</code></div>
-                            <p>Xem thứ hạng cụ thể của bạn hoặc người khác trên bảng xếp hạng.</p>
+                            <p>Xem thứ hạng của bạn hoặc người khác trên bảng xếp hạng.</p>
                         </div>
                         <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>staixiurank</code></div>
-                            <p>Tham gia chế độ Tài Xỉu Xếp Hạng (Ranked).</p>
+                            <div class="cmd-header"><code>ssk</code> <code>ssukien</code> <code>sevent</code></div>
+                            <p>Tham gia các sự kiện hiện có (thử nghiệm).</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>srank</code></div>
-                            <p>Xem Rank hiện tại của bạn trong mùa giải.</p>
+                            <p>Trang chủ chế độ rank, bật tắt tx / bc rank.</p>
                         </div>
-                         <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>srewards</code></div>
-                            <p>Nhận thưởng mùa giải và xem lịch sử nhận thưởng.</p>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sranksolo</code></div>
+                            <p>Ghép trận solo (PVP) chế độ rank với người chơi khác (có tính exp).</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>srankss</code></div>
+                            <p>Xem thông tin xếp hạng của bạn trong các mùa giải trước đây.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>stkrank</code></div>
+                            <p>Xem thống kê mùa giải xếp hạng.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>snvrank</code></div>
+                            <p>Đặt cược làm nhiệm vụ rank có giới hạn thời gian, nếu thua sẽ trừ khá nhiều exp.</p>
                         </div>
                     </div>
                 </div>
@@ -337,36 +473,92 @@
                     <h2><i class="fa-solid fa-gear"></i> Tiện ích & Hệ thống</h2>
                     <div class="cmd-grid">
                         <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>ssettings</code></div>
-                            <p>Cài đặt cá nhân và tùy chỉnh thông báo Bot.</p>
+                            <div class="cmd-header"><code>sgs</code> <code>sstart</code></div>
+                            <p>Getting Started - nơi làm nhiệm vụ và nhận quà tân thủ.</p>
                         </div>
                         <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>sping</code></div>
-                            <p>Kiểm tra tốc độ phản hồi mạng của Bot.</p>
+                            <div class="cmd-header"><code>ssettings</code> <code>ssetting</code></div>
+                            <p>Mở cài đặt và tùy chỉnh nhận thông báo.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sping</code> <code>sconnect</code></div>
+                            <p>Đo tốc độ kết nối mạng máy chủ, tính năng này được sử dụng cho kênh trạng thái bot trên máy chủ hỗ trợ.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sserver</code></div>
+                            <p>Cài đặt hoạt động của bot trong máy chủ của bạn, tùy chỉnh kênh cho danh sách đen.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sgift</code></div>
-                            <p>Nhập Giftcode nhận quà từ sự kiện.</p>
+                            <p>Nhập giftcode để nhận quà.</p>
                         </div>
                          <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>stangqua</code></div>
-                            <p>Tặng quà đính kèm tin nhắn cho người khác.</p>
+                            <p>Gửi tặng quà cho người khác, có thể gửi gold, ticket, items cá và khoáng sản.</p>
                         </div>
                         <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>scheck [ID]</code></div>
-                            <p>Kiểm tra thông tin quà tặng/thẻ bài qua ID nội bộ.</p>
+                            <div class="cmd-header"><code>scheck [id]</code></div>
+                            <p>Kiểm tra thông tin từ ID nội bộ, có thể dùng để gửi lời cảm ơn từ một món quà khi nút ko thể tương tác được do timeout.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sgiveaway</code> <code>/sgiveaway</code></div>
+                            <p>Tạo một giveaway mới.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>scount</code></div>
-                            <p>Xem thống kê kênh đếm số tại server.</p>
+                            <p>Xem thống kê đếm số tại máy chủ hiện tại.</p>
                         </div>
                         <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>sdis</code> <code>sdiscover</code></div>
-                            <p>Khám phá hoặc quảng bá máy chủ Discord của bạn.</p>
+                            <div class="cmd-header"><code>svote</code></div>
+                            <p>Vote cho bot trên top.gg để nhận Rương Báu (Bậc 1-10) và tích lũy mốc nhận x2 quà mỗi 12 giờ.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sctool</code></div>
-                            <p>Tạo, chia sẻ và chơi các tool do cộng đồng sáng tạo.</p>
+                            <p>Tự tạo tool, đăng lên và khám phá các tool được tạo bởi những người chơi khác.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sctool [id]</code></div>
+                            <p>Chơi nhanh một tool qua id số hoặc id chữ của nó.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sstats</code> <code>stk</code></div>
+                            <p>Xem thống kê tài khoản của bạn.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>spc</code> / <code>spcedit</code></div>
+                            <p>Xem thẻ hồ sơ của bạn hoặc người khác / Chỉnh sửa nền thẻ hồ sơ của bạn.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sdm</code></div>
+                            <p>Tùy chọn tắt thông báo qua dms từ admin.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sluckybox</code></div>
+                            <p>Cài đặt kênh lucky box cho server của bạn.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>scap [mã]</code></div>
+                            <p>Captcha.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>snew</code></div>
+                            <p>Xem tin tức (lịch sử) cập nhật của bot.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sbutton</code> <code>snut</code></div>
+                            <p>Chơi game button challenge, diễn ra từ 18:00 - 21:00 mỗi thứ hai và thứ năm.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>scd</code></div>
+                            <p>Kiểm tra thời gian hồi cooldowns của các lệnh.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>skv</code></div>
+                            <p>Liên kết KatVietGDPS (sắp ra mắt).</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>ssanggay</code></div>
+                            <p>uhm...?</p>
                         </div>
                     </div>
                 </div>
