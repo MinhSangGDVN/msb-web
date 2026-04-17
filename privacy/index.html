@@ -84,7 +84,7 @@
             
             <div id="content-vi" class="lang-content">
                 <h1>CHÍNH SÁCH BẢO MẬT</h1>
-                <p class="meta-info">Ngày có hiệu lực: 16 tháng 01, 2026<br>Phiên bản: 1.0</p>
+                <p class="meta-info">Cập nhật lần cuối: 17 tháng 04, 2026<br>Phiên bản: 1.1</p>
                 
                 <p>Chào mừng bạn đến với MingSengBot. Chúng tôi cam kết bảo vệ quyền riêng tư của người dùng. Chính sách bảo mật này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ thông tin của bạn khi bạn sử dụng dịch vụ của chúng tôi trên nền tảng Discord. Bằng việc sử dụng dịch vụ, bạn cũng đồng ý với <a href="../terms/">Điều khoản dịch vụ (Terms of Service)</a> của chúng tôi.</p>
 
@@ -95,6 +95,7 @@
                     <li><strong>Username:</strong> Tên người dùng của bạn.</li>
                     <li><strong>Server ID & Server Name:</strong> Mã định danh và tên của máy chủ nơi bot được thêm vào.</li>
                     <li><strong>Server Member Nickname:</strong> Biệt danh của bạn trong một máy chủ cụ thể.</li>
+                    <li><strong>Nhật ký lệnh (Command Logs):</strong> Khi bạn sử dụng các lệnh của Bot, hệ thống sẽ ghi nhận lại tên lệnh, thời gian và địa điểm (kênh) thực hiện.</li>
                 </ul>
 
                 <h2>2. MỤC ĐÍCH SỬ DỤNG THÔNG TIN</h2>
@@ -102,15 +103,21 @@
                 <ul>
                     <li><strong>User ID:</strong> Được sử dụng làm khóa chính trong cơ sở dữ liệu để lưu trữ và quản lý tài sản ảo (Gold, KCT, vật phẩm...). Đây là cơ sở để đảm bảo tài sản của bạn không bị nhầm lẫn với người khác.</li>
                     <li><strong>Username:</strong> Dùng để hiển thị danh tính trong các tính năng cộng đồng. Ví dụ: Khi bạn tạo và đăng tải một Custom Tool (ctool), tên của bạn sẽ được hiển thị như một cách ghi nhận quyền tác giả.</li>
-                    <li><strong>Server ID & Server Name:</strong> Được sử dụng cho mục đích thống kê nội bộ của Đội ngũ Admin. Điều này giúp chúng tôi biết được quy mô sử dụng và tối ưu hóa tài nguyên máy chủ.</li>
+                    <li><strong>Server ID & Server Name:</strong> Được sử dụng cho mục đích thống kê nội bộ của MingSengBot Team. Điều này giúp chúng tôi biết được quy mô sử dụng và tối ưu hóa tài nguyên máy chủ.</li>
                     <li><strong>Server Member Nickname:</strong> Sử dụng trong các tính năng tương tác đa máy chủ, điển hình là game Đua Thú Multiplayer. Khi các thành viên từ nhiều server khác nhau tham gia cùng một trận đấu, biệt danh này giúp mọi người nhận diện nhau trong trò chơi.</li>
+                    <li><strong>Command Logs:</strong> Được sử dụng duy nhất cho mục đích chống gian lận (anti-cheat). Điều này giúp chúng tôi phát hiện và ngăn chặn các hành vi sử dụng macro, script tự động can thiệp vào trò chơi, đảm bảo môi trường công bằng cho những người chơi chính đáng.</li>
                 </ul>
 
                 <h2>3. CHIA SẺ VÀ BẢO MẬT DỮ LIỆU</h2>
                 <ul>
                     <li><strong>Chia sẻ:</strong> Chúng tôi không bán, trao đổi hoặc chuyển giao thông tin cá nhân của bạn cho bên thứ ba. Dữ liệu chỉ được lưu trữ trong hệ thống nội bộ của MingSengBot.</li>
                     <li><strong>Hiển thị công khai:</strong> Một số thông tin như Username hoặc Nickname có thể hiển thị công khai cho những người dùng khác thông qua các lệnh của bot (đua thú multiplayer, kết quả trận đấu, thông tin công cụ...).</li>
-                    <li><strong>Bảo mật:</strong> Quyền truy cập vào file server và cơ sở dữ liệu được giới hạn nghiêm ngặt, chỉ thành viên trong Đội ngũ Phát triển (Dev Team) mới có quyền truy cập để vận hành hệ thống. Chúng tôi cam kết nỗ lực tối đa trong việc áp dụng các biện pháp kỹ thuật cần thiết để bảo vệ dữ liệu của bạn khỏi mọi hành vi truy cập trái phép.</li>
+                    <li><strong>Bảo mật:</strong> Quyền truy cập vào file server và cơ sở dữ liệu được giới hạn nghiêm ngặt, chỉ thành viên thuộc MingSengBot Team mới có quyền truy cập để vận hành hệ thống. Chúng tôi cam kết nỗ lực tối đa trong việc áp dụng các biện pháp kỹ thuật cần thiết để bảo vệ dữ liệu của bạn khỏi mọi hành vi truy cập trái phép.</li>
+                    <li><strong>Tính tạm thời:</strong> Các nhật ký lệnh không được lưu trữ vĩnh viễn. Chúng tôi chỉ lưu trữ các bản ghi gần nhất và hệ thống sẽ tự động xóa sạch sau một khoảng thời gian ngắn.</li>
+                    <li><strong>Minh bạch về Log:</strong> Ví dụ về dữ liệu log nội bộ: <br>
+                        <code>[CMD LOG] &lt;tên người dùng> (&lt;id người dùng>) dùng lệnh &lt;tên lệnh> ở kênh &lt;id kênh> lúc &lt;thời gian></code><br>
+                        Chúng tôi <strong>không</strong> lưu trữ nội dung tin nhắn chat thông thường của bạn.
+                    </li>
                 </ul>
 
                 <h2>4. QUYỀN CỦA NGƯỜI DÙNG</h2>
@@ -126,14 +133,19 @@
                 <h2>6. LIÊN HỆ</h2>
                 <p>Nếu có bất kỳ câu hỏi nào liên quan đến quyền riêng tư, bạn có thể liên hệ với chúng tôi tại:</p>
                 <ul>
+                    <li>Email hỗ trợ: <a href="mailto:support@mscrew.io.vn">support@mscrew.io.vn</a></li>
                     <li>Discord Support Server: <a href="https://discord.gg/fv2RBWrqSt" target="_blank">https://discord.gg/fv2RBWrqSt</a></li>
-                    <li>Phương thức: Tạo Ticket hỗ trợ tại kênh <code>#𝘾𝙧𝙚𝙖𝙩𝙚</code></li>
+                    <li>Phương thức: Gửi Email hoặc tạo Ticket hỗ trợ tại kênh <code>#create</code></li>
                 </ul>
+                <p class="meta-info">
+    <i class="fa-solid fa-clock-rotate-left"></i> 
+    Xem các phiên bản cũ: <a href="https://github.com/MinhSangGDVN/msb-web/commits/main/privacy/index.html" target="_blank">Lịch sử thay đổi</a>
+</p>
             </div>
 
             <div id="content-en" class="lang-content" style="display: none;">
                 <h1>PRIVACY POLICY</h1>
-                <p class="meta-info">Effective Date: January 16, 2026<br>Version: 1.0</p>
+                <p class="meta-info">Last Updated: April 17, 2026<br>Version: 1.1</p>
                 
                 <p>Welcome to MingSengBot. We are committed to protecting our users' privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our services on the Discord platform. By using our services, you also agree to our <a href="../terms/">Terms of Service (ToS)</a>.</p>
 
@@ -144,6 +156,7 @@
                     <li><strong>Username:</strong> Your global Discord username.</li>
                     <li><strong>Server ID & Server Name:</strong> The identifier and name of the server where the bot is added.</li>
                     <li><strong>Server Member Nickname:</strong> Your specific nickname within a server.</li>
+                    <li><strong>Command Logs:</strong> When you use Bot commands, the system records the command name, timestamp, and the channel where it was executed.</li>
                 </ul>
 
                 <h2>2. PURPOSE OF DATA USAGE</h2>
@@ -151,15 +164,21 @@
                 <ul>
                     <li><strong>User ID:</strong> Used as a primary key in our database to store and manage virtual assets (Gold, KCT, items, etc.). This ensures your assets are correctly attributed to your account.</li>
                     <li><strong>Username:</strong> Used to display your identity in community features. For example, when you create and publish a Custom Tool (ctool), your name will be displayed for authorship credit.</li>
-                    <li><strong>Server ID & Server Name:</strong> Used for internal statistical purposes by the Admin Team. This helps us monitor usage scale and optimize server resources.</li>
+                    <li><strong>Server ID & Server Name:</strong> Used for internal statistical purposes by the MingSengBot Team. This helps us monitor usage scale and optimize server resources.</li>
                     <li><strong>Server Member Nickname:</strong> Used in cross-server interaction features, such as the Multiplayer Animal Racing game. When members from different servers join the same match, this nickname helps players identify each other during the game.</li>
+                    <li><strong>Command Logs:</strong> Used exclusively for anti-cheat purposes. This helps us detect and prevent the use of macros or automated scripts, ensuring a fair environment for all legitimate players.</li>
                 </ul>
 
                 <h2>3. DATA SHARING AND SECURITY</h2>
                 <ul>
                     <li><strong>Sharing:</strong> We do not sell, trade, or transfer your personal information to third parties. Data is stored exclusively within MingSengBot's internal system.</li>
                     <li><strong>Public Display:</strong> Certain information such as your Username or Nickname may be displayed publicly to other users via bot commands (e.g., multiplayer racing, game results, tool info).</li>
-                    <li><strong>Security:</strong> Access to server files and databases is strictly restricted; only members of the Development Team (Dev Team) have the authority to access them for system operations. We are committed to our best efforts in implementing necessary technical measures to protect your data from any unauthorized access.</li>
+                    <li><strong>Security:</strong> Access to server files and databases is strictly restricted; only members of the MingSengBot Team have the authority to access them for system operations. We are committed to our best efforts in implementing necessary technical measures to protect your data from any unauthorized access.</li>
+                    <li><strong>Data Retention:</strong> Command logs are not stored permanently. We only keep the most recent logs, and they are automatically deleted after a short period.</li>
+                    <li><strong>Log Transparency:</strong> Example of internal log format:<br>
+                        <code>[CMD LOG] &gt;username> (&gt;user_id>) used command &gt;command_name> in channel &gt;channel_id> at &gt;timestamp></code><br>
+                        We <strong>do not</strong> log your regular chat messages.
+                    </li>
                 </ul>
 
                 <h2>4. USER RIGHTS</h2>
@@ -175,11 +194,15 @@
                 <h2>6. CONTACT US</h2>
                 <p>If you have any questions regarding your privacy, you can contact us at:</p>
                 <ul>
+                   <li>Support Email: <a href="mailto:support@mscrew.io.vn">support@mscrew.io.vn</a></li>
                     <li>Discord Support Server: <a href="https://discord.gg/fv2RBWrqSt" target="_blank">https://discord.gg/fv2RBWrqSt</a></li>
-                    <li>Method: Create a support ticket in the <code>#𝘾𝙧𝙚𝙖𝙩𝙚</code> channel.</li>
+                    <li>Method: Send an email or create a support ticket in the <code>#create</code> channel.</li>
                 </ul>
+                <p class="meta-info">
+                    <i class="fa-solid fa-clock-rotate-left"></i> 
+                    View older versions: <a href="https://github.com/MinhSangGDVN/msb-web/commits/main/privacy/index.html" target="_blank">Change log</a>
+                </p>
             </div>
-
         </div>
     </section>
 
