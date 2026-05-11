@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHỮNG ĐIỀU CẦN LƯU Ý TRONG VIỆC HOÀN TIỀN TRONG MSBS [A]</title>
+    <meta property="og:title" content="💠 NHỮNG ĐIỀU CẦN LƯU Ý TRONG VIỆC HOÀN TIỀN TRONG MÁY SÀNG BỘT SUPPORT">
+    <meta property="og:description" content="Hướng dẫn chi tiết luật và cách thức yêu cầu hoàn tiền nhanh chóng từ Moderator. Đọc kỹ quy định, cách gửi bằng chứng và hệ thống xử phạt (strike) để được hỗ trợ tốt nhất! :3">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://mingsengbot.vercel.app/assets/avatar.jpg">
+    <meta name="theme-color" content="#3182ce">
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 30px 5%;
+        }
+        h1 {
+            color: #1a365d;
+            font-size: 2.2em;
+            border-bottom: 2px solid #3182ce;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #3182ce;
+            font-size: 1.5em;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-left: 4px solid #3182ce;
+            padding-left: 10px;
+        }
+        b {
+            color: #000;
+            font-weight: 700;
+        }
+        ul {
+            padding-left: 30px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        table {
+            width: 100%;
+            max-width: 800px;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 1em;
+        }
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #cbd5e1;
+            text-align: left;
+        }
+        th {
+            background-color: #3182ce;
+            color: #ffffff;
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        .zoomable-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            cursor: zoom-in;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            display: block;
+            margin: 20px 0;
+        }
+        .zoomable-image:hover {
+            transform: scale(1.02);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.85);
+            cursor: zoom-out;
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90vh;
+            border-radius: 4px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            animation: zoom 0.3s;
+        }
+        @keyframes zoom {
+            from {transform: scale(0.8)} 
+            to {transform: scale(1)}
+        }
+        .footer-note {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px dashed #cbd5e1;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>💠 NHỮNG ĐIỀU CẦN LƯU Ý TRONG VIỆC HOÀN TIỀN TRONG MSBS [A]</h1>
+    <h2><b>A1. Sơ lược về bài viết này</b></h2>
+    <p>Bài viết này nhằm phục vụ cho việc các Moderator trong việc hoàn tiền cho các người chơi. Bài viết này sẽ giúp các bạn hiểu về các luật và cách trình bày chính bài viết của mình để được hoàn tiền nhanh và sử dụng Bot một cách tiện lợi và vui vẻ!</p>
+    <h2><b>A2. Cách trình bày bài viết hoàn tiền</b></h2>
+    <p><b>Một bài viết nên có những yếu tố sau đây:</b></p>
+    <ul>
+        <li>ID người dùng (không cần thiết nếu bạn tự báo cho chính mình)</li>
+        <li>Tổng số tiền các mod để add cho bạn</li>
+        <li>Bằng chứng phi ngôn ngữ chứng minh sự mất mát của bạn</li>
+        <li>Giải thích nếu bạn có thể để tăng sự thuyết phục.</li>
+    </ul>
+    <img src="../assets/example.png" alt="Bằng chứng mất tiền" class="zoomable-image" onclick="openModal(this.src)" title="Bấm vào để phóng to ảnh (chắc v 🐧)">
+    <p><b>Ví dụ trong bức ảnh trên thì bạn ấy đã:</b></p>
+    <ul>
+        <li>Nêu rõ ID người dùng để mod add tiền [1]</li>
+        <li>Tổng số tiền đã bị mất của bạn đó [2]</li>
+        <li>Bằng chứng về lỗi bug và sự mất tiền oan của ban ấy [3]</li>
+        <li>Giải thích quá trình mất (Không bắt buộc!) [4]</li>
+    </ul>
+    <p><b>Ngoài ra, có các dấu hiệu lỗi bạn nên chú ý:</b></p>
+    <ul>
+        <li>Đã vào trận game nhưng lại roll thiếu bạn</li>
+        <li>Không có roll game.</li>
+    </ul>
+    <h2><b>A3. Các lưu ý cần tuân theo</b></h2>
+    <p>Các mod chỉ xử lý vấn đề này ở trong kênh “bù tiền” trong MSBS. Ngoài ra các mod cũng sẽ không giải quyết nếu bạn vào bài post người khác đòi bù tiền.</p>
+    <p>Các mod khuyến khích tạo mới bài post chưa giải quyết, bằng cách thêm nhiều vụ mất tiền chưa được giải quyết.</p>
+    <p>Thống nhất hiện tại thì khi bị bug roll nhiều lần, kết quả đầu tiên được roll là kết quả duy nhất được chấp nhận, các kết quả còn lại là bug.</p>
+    <p>Các mod đang làm việc theo ca, trong đó thì ca sáng (5h-13h) và ca chiều (11h-22h) được phân công như sau:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Ca làm việc</th>
+                <th>Người phụ trách (Moderators)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>Ca Sáng</b></td>
+                <td>@svcrystal, @minhsanggdvn</td>
+            </tr>
+            <tr>
+                <td><b>Ca Chiều</b></td>
+                <td>@ombrelight, @hoanganh498</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Làm ơn hãy ping mod đúng theo ca, để tránh rối và tiện lợi!</p>
+    <h2><b>A4. Các điều đặc biệt khác</b></h2>
+    <p>Chúng mình sử dụng dạng cảnh báo “strike”, trong đó nếu bạn có sai phạm thì sẽ bị ăn strike vô điều kiện. Nếu bạn có đóng góp chỉ ra sai phạm lớn thì sẽ được bỏ một strike nếu có. Tuỳ vào số lương strike thì bạn sẽ:</p>
+    <ul>
+        <li>Nếu bạn có 3 strike thì bạn sẽ bị timeout 7 ngày và ban bot 7 ngày.</li>
+        <li>Nếu bạn có 5 strike bạn sẽ bị ban vĩnh viễn khỏi MSBS và bot.</li>
+    </ul>
+    <p>Ngoài ra hình phạt thì chúng mình sẽ trình bày theo dạng <b>[x-y]</b> tức nếu bị lần đầu thì sẽ làm theo x và các lần sau làm theo y. Nếu chỉ có mỗi <b>[x]</b> thì đó là sai phạm nặng và hiệu quả tức thì và làm theo x đó.</p>
+    <p>Chúng mình cũng xin viết tắt “strike” thành “sr”</p>
+    <h2><b>A4a. Xử phạt từ sai phạm người đăng</b></h2>
+    <ul>
+        <li>Nếu bạn ping mod ngoài ca (căn cứ vào khoảng thời gian đăng tin) <b>[warn - +1 sr]</b></li>
+        <li>Đăng tổng tiền sai, không ghi tổng tiền vào bài post <b>[warn - +1 warn]</b></li>
+        <li>Bằng chứng không thuyết phục, đi ngược lại với những gì đã khai báo <b>[+3 sr]</b></li>
+        <li>Thua game mà kêu la, không có bằng chứng <b>[+2 sr]</b></li>
+        <li>Ping mod quá nhiều :)))) <b>[warn - 1 sr]</b></li>
+        <li>Vi phạm các điều A3</li>
+        <li>Yêu cầu mod xử lí khác kênh #bù tiền <b>[-10%]</b></li>
+        <li>Cố tình qua mặt mod, lừa hoàn tiền (hơn điều A4a.3 * ) <b>[3 sr - 5 sr]</b></li>
+    </ul>
+    <h2><b>A4b. Thưởng từ việc chỉ ra lỗi sai của mod/người khác</b></h2>
+    <ul>
+        <li>Nếu mod cộng tiền sai và bạn bắt gặp và chứng minh lỗi sai của mod thành công thì sẽ được sửa lại và <b>-1 sr</b>.</li>
+        <li>Bắt gặp lỗi sai (A4a) của người chơi khác <b>[-1 sr]</b></li>
+        <li>Bắt gặp người chơi khác lừa mod, qua mặt mod (A4a.8) <b>[-2 sr VÀ +10000 gold]</b></li>
+    </ul>
+    <p>Các điều này giúp cho môi trường đền bù công bằng và hiệu quả.</p>
+    <h2><b>A5. Giải thích các thuật ngữ</b></h2>
+    <p><b>“mod”</b>: ở đây chỉ moderator (người quản lý), hiện tại tính từ 5/26 thì MSB có 4 mod</p>
+    <p><b>“roll”</b>: một lượt chốt kết quả trong staixiu và sbaucua. trong đó thông thường chỉ có đúng 1 roll cho một lượt game</p>
+    <p><b>“MSBS”</b>: viết tắt cho: “MingSengBot Support”, là server hỗ trợ chính thức của MSB - MingSengBot</p>
+    <p><b>Cách trình bày luật:</b> Ghi rõ mục và điều ở đằng sau nối liền</p>
+    <p><b>(*)</b> Ví dụ, nếu người chơi A bị phát hiện lừa mod và lợi dụng thì để ban thì mod sẽ đưa ra lý do như sau:<br>
+    Người chơi A vi phạm mục A4a trong đó là điều 8 thì sẽ trình bày: Vi phạm Điều A4a.8 trong Những điều cần lưu ý trong việc bù tiền.</p>
+    <h2><b>A6. Lời ngỏ</b></h2>
+    <p>đáng lý ra cái ngày để vô a1 nhưng k ai quan tâm đâu :)))</p>
+    <p>mình - hàu xin chúc các bạn chơi bot vui vẻ k cọc nha :)))) nhớ đọc cho kỹ á mình soạn tay mệt điên @.@ nếu mà đụng đến mình thì riêng sẽ xử phạt còn nặng hơn a4a :3</p>
+    <div class="footer-note">
+        <p><b>Được viết và biên soạn bởi:</b><br>
+        @ombrelight (hàu)<br>
+        Ver: 3.0</p>
+        <p><b>NẾU BẠN CÓ CÂU HỎI GÌ HÃY LIÊN HỆ @minhsanggdvn hoặc @ombrelight</b></p>
+    </div>
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <img class="modal-content" id="modalImg">
+</div>
+<script>
+    function openModal(src) {
+        document.getElementById('imageModal').style.display = "block";
+        document.getElementById('modalImg').src = src;
+    }
+    function closeModal() {
+        document.getElementById('imageModal').style.display = "none";
+    }
+</script>
+</body>
+</html>
