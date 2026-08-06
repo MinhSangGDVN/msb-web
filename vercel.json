@@ -2,17 +2,17 @@
   "redirects": [
     {
       "source": "/invite",
-      "destination": "https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=8",
+      "destination": "https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=1126176932612168",
       "permanent": true
     },
     {
       "source": "/topgg",
-      "destination": "https://top.gg/bot/1401577898338684988/",
+      "destination": "https://top.gg/vi/bot/1401577898338684988/",
       "permanent": true
     },
     {
       "source": "/vote",
-      "destination": "https://top.gg/bot/1401577898338684988/vote",
+      "destination": "https://top.gg/vi/bot/1401577898338684988/vote",
       "permanent": true
     }
   ]
