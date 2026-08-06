@@ -37,7 +37,7 @@
             <a href="#" class="nav-item active">Lệnh bot</a>
             <a href="../terms/" class="nav-item">Điều khoản</a>
             <a href="../privacy/" class="nav-item">Bảo mật</a>
-            <a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=8" class="btn-invite">Mời bot ngay</a>
+            <a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=1126176932612168" class="btn-invite">Mời bot ngay</a>
         </nav>
         <div class="menu-btn glass-shine" onclick="toggleMenu()">
             <i class="fa-solid fa-bars"></i>
@@ -63,7 +63,7 @@
             <a href="../privacy/"><i class="fa-solid fa-shield-halved"></i> Chính sách bảo mật</a>
         </div>
         <div style="margin-top: auto; display: flex; flex-direction: column; gap: 15px;">
-            <a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=8" class="btn btn-primary" style="justify-content: center;">
+            <a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=1126176932612168" class="btn btn-primary" style="justify-content: center;">
                 Mời bot ngay
             </a>
         </div>
@@ -88,7 +88,8 @@
             <div class="cmd-sidebar glass-panel">
                 <h3>Danh mục</h3>
                 <ul>
-                    <li class="active" onclick="scrollToCategory('economy')"><i class="fa-solid fa-coins"></i> Kinh tế & Cá nhân</li>
+                    <li class="active" onclick="scrollToCategory('sinhnhat')"><i class="fa-solid fa-cake-candles"></i> Sự Kiện Sinh Nhật 1 Tuổi</li>
+                    <li onclick="scrollToCategory('economy')"><i class="fa-solid fa-coins"></i> Kinh tế & Cá nhân</li>
                     <li onclick="scrollToCategory('games')"><i class="fa-solid fa-gamepad"></i> Trò chơi & Giải trí</li>
                     <li onclick="scrollToCategory('jobs')"><i class="fa-solid fa-hammer"></i> Câu cá, Đào mỏ & Săn thú</li>
                     <li onclick="scrollToCategory('items')"><i class="fa-solid fa-bag-shopping"></i> Vật phẩm & Thú cưng</li>
@@ -98,7 +99,66 @@
             </div>
 
             <div class="cmd-container">
-                
+
+                <div id="sinhnhat" class="cmd-category">
+                    <h2><i class="fa-solid fa-cake-candles"></i> Sự Kiện Sinh Nhật 1 Tuổi</h2>
+                    <div class="cmd-grid">
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sbd</code> <code>ssn</code> <code>ssinhnhat</code></div>
+                            <p>Trang chủ sự kiện, xem Nến/Bánh Kem, nhận quà mốc, nhập mã bí mật, viết lưu bút, Make a Wish.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sthoinen</code></div>
+                            <p>Thổi nến mừng sinh nhật bot mỗi ngày, nhận Nến + Bánh Kem.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sswish [lời chúc]</code></div>
+                            <p>Gửi lời chúc sinh nhật bot, nhận Nến ngẫu nhiên (tối đa 5 lần/ngày).</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>std</code></div>
+                            <p>Chơi minigame độc quyền Đại Tiệc Tốc Độ, cược Nến nhận Orbs/Bánh Kem/Gói Quà.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>snvsn</code></div>
+                            <p>Nhiệm vụ Sinh Nhật hàng ngày, hoàn thành nhận thêm Nến.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sunbox</code></div>
+                            <p>Đăng ký Hộp Quà Đêm (trước 19:00 mỗi ngày, claim trong 90 phút).</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>ssnbook [nội dung]</code></div>
+                            <p>Viết lưu bút kỷ niệm 1 năm vào Bảo Tàng Kỷ Niệm.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sluubut</code> <code>slb</code></div>
+                            <p>Xem Sổ Lưu Bút và thả tim ❤️ (mở từ 12/08/2026).</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>stksn</code></div>
+                            <p>Xem thống kê cá nhân trong sự kiện.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sshop</code></div>
+                            <p>Có thêm mục 🎂 Sự Kiện Sinh Nhật 1 Tuổi để đổi Nến lấy vật phẩm giới hạn.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>svq</code></div>
+                            <p>Vòng Quay May Mắn giờ có thêm 🎂 Vòng Quay Sinh Nhật và 🔮 Vòng Quay Orbs.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sinv</code></div>
+                            <p>Hộp quà sự kiện nằm ở mục 🎁 GÓI QUÀ SỰ KIỆN, tự bấm để mở.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sbxh</code></div>
+                            <p>Có thêm Bảng Xếp Hạng Bánh Kem trong mục Cá Nhân.</p>
+                        </div>
+                    </div>
+                    <p style="margin-top:15px; opacity:0.8; font-size:0.9rem;">Sự kiện độc quyền kỷ niệm 1 năm MingSengBot (02/08 - 11/08/2026).</p>
+                </div>
+
                 <div id="economy" class="cmd-category">
                     <h2><i class="fa-solid fa-coins"></i> Kinh tế & Cá nhân</h2>
                     <div class="cmd-grid">
@@ -174,6 +234,46 @@
                             <div class="cmd-header"><code>sdh</code> <code>sdanhhieu</code></div>
                             <p>Cài đặt danh hiệu hiển thị trên hồ sơ (trong <code>sme</code> & <code>suser</code>).</p>
                         </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sbeg</code></div>
+                            <p>Lệnh ăn xin thế hệ mới 🤓.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sfl</code></div>
+                            <p>Xem danh sách những người đang theo dõi bạn.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>stt</code> <code>sthanhtich</code></div>
+                            <p>Xem danh sách thành tích.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sbanbe</code></div>
+                            <p>Ghép streak bạn bè.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sno</code> <code>sdebt</code></div>
+                            <p>Xem danh sách các khoản nợ của bản thân.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sjob</code> <code>swork</code></div>
+                            <p>J#b Simulator=))).</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sjobinfo</code></div>
+                            <p>Xem job hiện tại.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sjoblist</code></div>
+                            <p>Danh sách các công ty có thể xin việc.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sjobcauca</code></div>
+                            <p>Làm việc nếu bạn là nhân viên của SUSI.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sjobdaomo</code></div>
+                            <p>Làm việc nếu bạn là nhân viên của VAPH.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -191,6 +291,10 @@
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>scaothap</code> <code>sct</code> <code>shilo</code></div>
                             <p>Chơi Cao thấp (High/Low).</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sgt</code> <code>sdgt</code> <code>strafficlight</code> <code>stl</code> <code>slt</code> <code>sgiaothong</code></div>
+                            <p>Chơi đèn giao thông.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>smk</code></div>
@@ -296,6 +400,26 @@
                             <div class="cmd-header"><code>stest</code></div>
                             <p>Bài kiểm tra coding (hiện có 600 câu).</p>
                         </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sxov1 @mention</code> <code>scarov1 @mention</code></div>
+                            <p>Chơi cờ caro (legacy mode) với người được đề cập.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sdaotao</code> <code>sdig</code></div>
+                            <p>Chơi đào táo (max cược 500k gold).</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>svq</code></div>
+                            <p>Vòng quay may mắn.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>scp</code> <code>scophieu</code></div>
+                            <p>Cổ phiếu.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>spick</code> <code>s8ball</code></div>
+                            <p>8 Ball.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -355,8 +479,12 @@
                             <p>Xem danh sách thú đã săn bắt được.</p>
                         </div>
                         <div class="cmd-card glass-panel">
-                            <div class="cmd-header"><code>sexp</code></div>
+                            <div class="cmd-header"><code>sexp</code> <code>sxp</code></div>
                             <p>Đổi exp sang sách enchant (hơi phi lí thông cảm 🐧).</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>senchant</code></div>
+                            <p>Bảng danh sách các enchant hiện có.</p>
                         </div>
                     </div>
                 </div>
@@ -435,6 +563,30 @@
                             <p>Xem bảng xếp hạng săn thú theo exp / số lượng thú săn được.</p>
                         </div>
                         <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sbxhpet</code></div>
+                            <p>Xem bảng xếp hạng thú cưng.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sbxhcp</code></div>
+                            <p>Xem bảng xếp hạng cổ đông.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sbxhfl</code></div>
+                            <p>Xem bảng xếp hạng followers.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sbxhstars</code></div>
+                            <p>Xem bảng xếp hạng stars.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sbxhticket</code></div>
+                            <p>Xem bảng xếp hạng ticket.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sbxhorbs</code></div>
+                            <p>Xem bảng xếp hạng orbs.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>skyluc</code></div>
                             <p>Xem kỷ lục thế giới.</p>
                         </div>
@@ -466,6 +618,18 @@
                             <div class="cmd-header"><code>snvrank</code></div>
                             <p>Đặt cược làm nhiệm vụ rank có giới hạn thời gian, nếu thua sẽ trừ khá nhiều exp.</p>
                         </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sclansolo</code></div>
+                            <p>Làm nhiệm vụ solo clan.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sranklist</code></div>
+                            <p>Danh sách ranks.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>.</code></div>
+                            <p>Lối tắt vào nhanh bhc, clansolo (tự động ưu tiên bhc).</p>
+                        </div>
                     </div>
                 </div>
 
@@ -477,12 +641,20 @@
                             <p>Getting Started - nơi làm nhiệm vụ và nhận quà tân thủ.</p>
                         </div>
                         <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sid [id phiên/cược]</code></div>
+                            <p>Xem chi tiết 1 ván game hoặc thống kê toàn server.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>ssettings</code> <code>ssetting</code></div>
                             <p>Mở cài đặt và tùy chỉnh nhận thông báo.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sping</code> <code>sconnect</code></div>
                             <p>Đo tốc độ kết nối mạng máy chủ, tính năng này được sử dụng cho kênh trạng thái bot trên máy chủ hỗ trợ.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sshard</code> <code>scheckping</code> <code>sysping</code></div>
+                            <p>Kiểm tra trạng thái, latency shard hiện tại của bot mà server của bạn đang chạy.</p>
                         </div>
                         <div class="cmd-card glass-panel">
                             <div class="cmd-header"><code>sserver</code></div>
@@ -560,6 +732,66 @@
                             <div class="cmd-header"><code>ssanggay</code></div>
                             <p>uhm...?</p>
                         </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>shelp</code></div>
+                            <p>Chính là cái bạn đang xem á.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sbug</code></div>
+                            <p>Báo cáo lỗi cho admin, có thưởng là danh hiệu.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>spartner</code></div>
+                            <p>Tham gia chương trình partnership nhận danh hiệu.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>shd</code></div>
+                            <p>Xem hướng dẫn 1 số thứ (lệnh sắp dead r).</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sti</code> <code>stienich</code></div>
+                            <p>Trung tâm tiện ích.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sbox</code> <code>smail</code></div>
+                            <p>Mở hộp thư.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>studien</code></div>
+                            <p>Đóng góp từ điển.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>snoitu</code></div>
+                            <p>Cài đặt kênh nối từ.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>statnoitu</code></div>
+                            <p>Gỡ kênh nối từ.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>scredits</code></div>
+                            <p>Thông tin bot.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sreminder</code> <code>srem</code> <code>sremind</code></div>
+                            <p>Nhắc nhở tùy chỉnh.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>shaugay</code></div>
+                            <p>Hàu gayyyyyyyyyyy.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>snhaycau</code></div>
+                            <p>Làm ơn đừng mà=)))</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>sphucgay</code></div>
+                            <p>Lol nữa hả.</p>
+                        </div>
+                        <div class="cmd-card glass-panel">
+                            <div class="cmd-header"><code>schan</code></div>
+                            <p>Chan bố m đi.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -578,10 +810,10 @@
                     Tự hào là Bot giải trí Economy từ đội ngũ phát triển Việt Nam, mang đến hệ thống tính năng đa dạng, vận hành ổn định và trải nghiệm mượt mà.
                 </p>
                 <div class="footer-social-gap">
-                    <a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=8" class="social-circle" title="Invite Bot">
+                    <a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=1126176932612168" class="social-circle" title="Invite Bot">
                         <i class="fa-solid fa-circle-plus"></i>
                     </a>
-                    <a href="https://top.gg/bot/1401577898338684988/vote" class="social-circle" title="Vote Bot">
+                    <a href="https://top.gg/vi/bot/1401577898338684988/vote" class="social-circle" title="Vote Bot">
                         <i class="fa-solid fa-star"></i>
                     </a>
                     <a href="https://discord.gg/fv2RBWrqSt" class="social-circle" title="Join Support">
@@ -602,14 +834,14 @@
                 <h4>Cộng đồng</h4>
                 <ul>
                     <li><a href="https://discord.gg/fv2RBWrqSt" target="_blank">Discord Server <i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
-                    <li><a href="https://top.gg/bot/1401577898338684988" target="_blank">Top.gg <i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
+                    <li><a href="https://top.gg/vi/bot/1401577898338684988" target="_blank">Top.gg <i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Bot</h4>
                 <ul>
-                    <li><a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=8" target="_blank">Mời Bot <i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
-                    <li><a href="https://top.gg/bot/1401577898338684988/vote" target="_blank">Bình chọn cho bot <i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
+                    <li><a href="https://discord.com/oauth2/authorize?client_id=1401577898338684988&scope=bot+applications.commands&permissions=1126176932612168" target="_blank">Mời Bot <i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
+                    <li><a href="https://top.gg/vi/bot/1401577898338684988/vote" target="_blank">Bình chọn cho bot <i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
                     <li><a href="https://discord.gg/fv2RBWrqSt" target="_blank">Hỗ trợ<i class="fa-solid fa-arrow-up-right-from-square redirect-icon"></i></a></li>
                     </ul>
             </div>
